@@ -51,6 +51,14 @@ header{
    letter-spacing: 2px;
 }
 
+.main-menu li a:hover{
+    text-decoration: none;
+}
+
+.active{
+    border:2px solid red;
+}
+
 
 
 /* #################### END HEADER ################## */
