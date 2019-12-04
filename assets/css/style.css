@@ -33,7 +33,7 @@ header{
 
 /*  Main Menu */
 
-.main-menu, .social-links{
+.main-menu, .social-links a{
     line-height: 120px;
 }
 
@@ -49,15 +49,40 @@ header{
    text-transform: uppercase;
    color: #fff;
    letter-spacing: 2px;
+   transition: all 0.35s ease-in-out;
+   -webkit-transition: all 0.35s ease-in-out;
+   -moz-transition: all 0.35s ease-in-out;
+   -o-transition: all 0.35s ease-in-out;
 }
 
 .main-menu li a:hover{
     text-decoration: none;
+    color: #00dddb;
 }
 
-.active{
-    border:2px solid red;
+/* END Main Menu */
+
+/* Social Links */
+
+.social-links a{
+    text-decoration: none;
+    font-size: 2.25rem;
+    color: rgba(0,0,0, .25);
+    margin: 0px 5px;
+    transition: color 0.35s ease-in-out;
+   -webkit-transition: color 0.35s ease-in-out;
+   -moz-transition: color 0.35s ease-in-out;
+   -o-transition: color 0.35s ease-in-out;
+   
 }
+
+.social-links a:hover{
+    color: rgba(0,219,221, 1);
+}
+
+/* END Social Links */
+
+
 
 
 
