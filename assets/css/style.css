@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Courgette');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Courgette|Oswald:400');
 
 html,
 body {
@@ -218,8 +218,7 @@ header {
 /* */
 
 #logo {
-    animation: fill-anime 2s ease forwards 3.3s;
-
+    animation: fill-anime 2s ease forwards 3.6s;
 }
 
 
@@ -246,6 +245,28 @@ header {
     font-size: 3em;
     opacity: 0;
     animation: consultation 2s ease forwards 4s;
+    color: #00dddb;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);
+}
+
+
+#diana{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: diana-move 2s ease forwards 4s;
+}
+
+#diana h2{
+    font-family: Oswald;
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    animation: diana-opacity 2s ease forwards 4s;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);;
+    
 }
 
 
@@ -342,10 +363,27 @@ header {
 }
 
 
+@keyframes diana-move{
+    from{
+        top:50%;
+    }
+    to{
+        top:60%;
+    }
+    
+}
 
 
-
-
+@keyframes diana-opacity{
+    from{
+        opacity: 0;
+        top:50%;
+    }
+    to{
+        opacity: 1;
+        top: 60%;
+    }
+}
 
 @keyframes text-anime {
     to {
