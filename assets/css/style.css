@@ -148,7 +148,6 @@ header {
     -o-animation-iteration-count: infinite;
 
 
-
 }
 
 
@@ -160,36 +159,47 @@ header {
         transform: scale(1);
         background: url("../images/food-lg.jpg");
         background-attachment: fixed;
-        content: "What you eat is what you will look.";
+        
     }
-    33% {
+    14.28%% {
         transform: scale(1.1);
-        background: url("../images/family-lg.jpg");
+        background: url("../images/yoga-lg.jpg");
         background-attachment: fixed;
-        content: "bab da bad.";
+        
     }
 
     /* Animation slide transition number 2 */
-    34% {
+    28.56% {
         transform: scale(1.1);
-        background: url("../images/family-lg.jpg");
+        background: url("../images/yoga-lg.jpg");
         background-attachment: fixed;
     }
-    66% {
+    42.84% {
         transform: scale(1);
-        background: url("../images/yoga-lg.jpg");
+        background: url("../images/family-lg.jpg");
         background-attachment: fixed;
     }
 
 
     /* Animation slide transition number 3 */
-    67% {
+    57.12% {
         transform: scale(1);
-        background: url("../images/yoga-lg.jpg");
+        background: url("../images/family-lg.jpg");
+        background-attachment: fixed;
+    }
+    71.4% {
+        transform: scale(1.1);
+        background: url("../images/food-lg.jpg");
+        background-attachment: fixed;
+    }
+    
+    85.68% {
+        transform: scale(1.1);
+        background: url("../images/food-lg.jpg");
         background-attachment: fixed;
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(1);
         background: url("../images/food-lg.jpg");
         background-attachment: fixed;
     }
@@ -201,95 +211,127 @@ header {
 
 /* */
 
-.slideshow::before {
-    content: "What you eat is what you will look.";
-    width: 90%;
-    min-height: 200px;
-    font-family: Courgette;
-    font-size: 5.25em;
+#logo{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -45%;
-    margin-top: -100px;
-    color: #fff;
-    text-shadow: 2px 2px 14px #000000;
-    -webkit-text-shadow: 2px 2px 14px #000000;
-    -moz-text-shadow: 2px 2px 14px #000000;
-    -o-text-shadow: 2px 2px 14px #000000;
-    animation-name: quotes-anime;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    transform: translate(-50%,-50%);
+    animation: fill-anime 2s ease forwards 3.3s;
+   
+}
 
+#logo path:nth-child(1){
+    stroke-dasharray: 630.78px;
+    stroke-dashoffset: 630.78px;
+    animation: text-anime 2s ease forwards;
+    
+}
+
+#logo path:nth-child(2){
+    stroke-dasharray: 419.45px;
+    stroke-dashoffset: 419.45px;
+    animation: text-anime 2s ease forwards 0.3s;
+    
+}
+
+#logo path:nth-child(3){
+    stroke-dasharray: 185.07px;
+    stroke-dashoffset: 185.07px;
+    animation: text-anime 2s ease forwards 0.6s;
+    
+}
+
+#logo path:nth-child(4){
+    stroke-dasharray: 453.67px;
+    stroke-dashoffset: 453.67px;
+    animation: text-anime 2s ease forwards 0.9s;
+   
+}
+
+#logo path:nth-child(5){
+    stroke-dasharray: 435.06px;
+    stroke-dashoffset: 435.06px;
+    animation: text-anime 2s ease forwards 1.2s;
+    
 }
 
 
 
-/**/
-
-/* Quotes Animation */
-
-@keyframes quotes-anime {
-
-    /* Animation slide transition number 1 */
-    /*0% {
-        content: " What you eat is what you will look ";
-    }
-    50%{
-        content: " A happy family is but an earlier heaven. ";
-    }
-    100% {
-        content: "Paradise is not a place, it’s a state of consciousness ";
-    }*/
-    
-    0% {
-        content: "What you eat is what you will look";
-        font-size: 0em;
-    }
-    12.5% {
-        
-        font-size: 5em;
-        
-    }
-    25% {
-        font-size: 0em;
-    }
-    
-    37.5%{
-        font-size: 5em;
-    }
-    
-    50%{
-        content: " A happy family is but an earlier heaven.";
-    }
-    
-    
-    
-    
-     62.5% {
-        
-        font-size: 0em;
-    }
-    75% {
-        
-        content: " Paradise is not a place, it’s a state of consciousness";
-        
-    }
-    87.5% {
-        font-size: 5em;
-    }
-    
-    90%{
-        font-size: 0em;
-    }
-    
-    100%{
-        font-size:  0em;
-    }
-    
+#logo path:nth-child(6){
+    stroke-dasharray: 289.97px;
+    stroke-dashoffset: 289.97px;
+    animation: text-anime 2s ease forwards 1.5s;
     
 }
+
+
+
+#logo path:nth-child(7){
+    stroke-dasharray: 482.84px;
+    stroke-dashoffset: 482.84px;
+    animation: text-anime 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8){
+    stroke-dasharray: 435.06px;
+    stroke-dashoffset: 435.06px;
+    animation: text-anime 2s ease forwards 2.1s;
+}
+
+
+#logo path:nth-child(9){
+    stroke-dasharray: 419.45px;
+    stroke-dashoffset: 419.45px;
+    animation: text-anime 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(10){
+    stroke-dasharray: 395.49px;
+    stroke-dashoffset: 395.49px;
+    animation: text-anime 2s ease forwards 2.7s;
+}
+
+#logo path:nth-child(11){
+    stroke-dasharray: 262.67px;
+    stroke-dashoffset: 267.67px;
+    animation: text-anime 2s ease forwards 3s;
+}
+
+#logo path:nth-child(12){
+    stroke-dasharray: 289.97px;
+    stroke-dashoffset: 289.97px;
+    animation: text-anime 2s ease forwards 3s;
+}
+
+#logo path:nth-child(13){
+    stroke-dasharray: 435.06px;
+    stroke-dashoffset: 435.06px;
+    animation: text-anime 2s ease forwards 3s;
+}
+
+
+
+@keyframes text-anime{
+    to{
+        stroke-dashoffset: 0px;
+    }
+}
+
+
+@keyframes fill-anime{
+    
+    from{
+        
+        fill: transparent;
+    }
+    
+    to{
+        fill: white;
+    }
+}
+
+
+
 
 /* Quotes Animation */
 
