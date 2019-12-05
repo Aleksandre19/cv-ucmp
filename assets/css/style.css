@@ -37,6 +37,12 @@ body {
 }
 
 
+@font-face {
+    font-family: Monolith;
+    src: url(../fonts/monolith-regular.otf);
+}
+
+
 
 
 
@@ -159,13 +165,13 @@ header {
         transform: scale(1);
         background: url("../images/food-lg.jpg");
         background-attachment: fixed;
-        
+
     }
     14.28%% {
         transform: scale(1.1);
         background: url("../images/yoga-lg.jpg");
         background-attachment: fixed;
-        
+
     }
 
     /* Animation slide transition number 2 */
@@ -192,7 +198,7 @@ header {
         background: url("../images/food-lg.jpg");
         background-attachment: fixed;
     }
-    
+
     85.68% {
         transform: scale(1.1);
         background: url("../images/food-lg.jpg");
@@ -211,99 +217,125 @@ header {
 
 /* */
 
-#logo{
+#logo {
+    animation: fill-anime 2s ease forwards 3.3s;
+
+}
+
+
+#wh-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    animation: fill-anime 2s ease forwards 3.3s;
-   
+    transform: translate(-50%, -50%);
+    animation: move-top 1s ease forwards 4s;
 }
 
-#logo path:nth-child(1){
+
+
+#free-consultation-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#free-consultation-text h1 {
+    font-family: Monolith;
+    font-size: 3em;
+    opacity: 0;
+    animation: consultation 2s ease forwards 4s;
+}
+
+
+
+#logo path:nth-child(1) {
     stroke-dasharray: 630.78px;
     stroke-dashoffset: 630.78px;
     animation: text-anime 2s ease forwards;
-    
+
 }
 
-#logo path:nth-child(2){
+
+
+#logo path:nth-child(2) {
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 0.3s;
-    
+
 }
 
-#logo path:nth-child(3){
+#logo path:nth-child(3) {
     stroke-dasharray: 185.07px;
     stroke-dashoffset: 185.07px;
     animation: text-anime 2s ease forwards 0.6s;
-    
+
 }
 
-#logo path:nth-child(4){
+#logo path:nth-child(4) {
     stroke-dasharray: 453.67px;
     stroke-dashoffset: 453.67px;
     animation: text-anime 2s ease forwards 0.9s;
-   
+
 }
 
-#logo path:nth-child(5){
+#logo path:nth-child(5) {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 1.2s;
-    
+
 }
 
 
 
-#logo path:nth-child(6){
+#logo path:nth-child(6) {
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 1.5s;
-    
+
 }
 
 
 
-#logo path:nth-child(7){
+#logo path:nth-child(7) {
     stroke-dasharray: 482.84px;
     stroke-dashoffset: 482.84px;
     animation: text-anime 2s ease forwards 1.8s;
 }
 
-#logo path:nth-child(8){
+#logo path:nth-child(8) {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 2.1s;
 }
 
 
-#logo path:nth-child(9){
+#logo path:nth-child(9) {
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 2.4s;
 }
 
-#logo path:nth-child(10){
+#logo path:nth-child(10) {
     stroke-dasharray: 395.49px;
     stroke-dashoffset: 395.49px;
     animation: text-anime 2s ease forwards 2.7s;
 }
 
-#logo path:nth-child(11){
+#logo path:nth-child(11) {
     stroke-dasharray: 262.67px;
     stroke-dashoffset: 267.67px;
     animation: text-anime 2s ease forwards 3s;
 }
 
-#logo path:nth-child(12){
+#logo path:nth-child(12) {
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 3s;
 }
 
-#logo path:nth-child(13){
+#logo path:nth-child(13) {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 3s;
@@ -311,24 +343,53 @@ header {
 
 
 
-@keyframes text-anime{
-    to{
+
+
+
+
+@keyframes text-anime {
+    to {
         stroke-dashoffset: 0px;
     }
 }
 
 
-@keyframes fill-anime{
-    
-    from{
-        
+@keyframes fill-anime {
+
+    from {
+
         fill: transparent;
     }
-    
-    to{
+
+    to {
         fill: white;
     }
 }
+
+
+@keyframes move-top {
+    from {
+        top: 50%;
+    }
+
+    to {
+        top: 40%;
+    }
+}
+
+
+@keyframes consultation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 
 
