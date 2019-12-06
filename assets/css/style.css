@@ -217,36 +217,37 @@ header {
 
 /* Background slideshow's text */
 
-
-
-.text-container{ /* All text's container */
-    
-    width:80%;
-    height:50%;
+.text-container {
+    /* All text's container */
+    width: 80%;
+    height: 50%;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
-#logo { /* SVG file's fill in animation*/
+#logo {
+    /* SVG file's fill in animation*/
     animation: fill-anime 2s ease forwards 3.6s;
 }
 
 
-#wh-container { /* Weight & Health - moving top's animation*/ 
+#wh-container {
+    /* Weight & Health - moving top's animation*/
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: wp-move-top 1s ease forwards 4s;
+    animation: wh-move-top 1s ease forwards 4s;
 }
 
 
 
-#free-consultation-text { /* Contulations's text positioning */ 
+#free-consultation-text {
+    /* Contulations's text positioning */
     position: absolute;
     top: 43%;
     left: 50%;
@@ -254,18 +255,20 @@ header {
 
 }
 
-#free-consultation-text h1 { /* Consulations's text animation */ 
+#free-consultation-text h1 {
+    /* Consulations's text animation */
     font-family: Monolith;
     font-size: 3em;
     opacity: 0;
     animation: consultation 2s ease forwards 4s;
     color: #00dddb;
-    text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
-#diana{ /* Positioning & moving bottom Diana's text */
-    width:100%;
+#diana {
+    /* Positioning & moving bottom Diana's text */
+    width: 100%;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -273,36 +276,46 @@ header {
     animation: diana-move-bottom 2s ease forwards 4s;
 }
 
-#diana h2{ /* Styling & fading out Diana's text */
-   
+#diana h2 {
+    /* Styling & fading out Diana's text */
     font-family: Oswald;
     font-size: 3.5em;
     text-transform: uppercase;
     color: #fff;
     opacity: 0;
     animation: diana-opacity 2s ease forwards 4s;
-    text-shadow: 2px 2px 4px rgba(0,0,0, 0.3);;
-    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    ;
+
 }
 
 
-.btn-signUp{ /* Welcome text's sign up button's styling & animation */
+.btn-signUp,.btn-modal {/* Welcoming text's & modal sign up button's styling */
     
-   position: absolute;
-   bottom:6%;
-   left: 50%;
-   padding-left: 40px;
-   padding-right: 40px;
-   border-radius: 10px;
-   background-color: #d95304;
-   border:1px solid #d95304 ;
-   opacity: 0;
-   transform: translate(-50%,-50%);
-   animation: btn-signUp 1s ease forwards 4s;
-   
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: #d95304;
+    border: 1px solid #d95304;
+    color: #fff;
+    
+
 }
 
-.btn-signUp:hover{ /* Welcome text's sign up button hover */
+.btn-signUp{/* Welcoming text's sign up button's animation */
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: btn-signUp 1s ease forwards 4s;
+}
+
+
+
+.btn-signUp:hover, .btn-modal:hover {/* Welcoming text's & modal sign up button's hovering */
+    /* Welcome text's sign up button hover */
     background-color: #a83e00;
     border: 1px solid #a83e00;
     color: #dadada;
@@ -310,9 +323,10 @@ header {
 
 
 
-    /* Weight & Health text's strokes animation */
+/* Weight & Health text's strokes animation */
 
-#logo path:nth-child(1) { /* Letter W animation */
+#logo path:nth-child(1) {
+    /* Letter W animation */
     stroke-dasharray: 630.78px;
     stroke-dashoffset: 630.78px;
     animation: text-anime 2s ease forwards;
@@ -323,98 +337,110 @@ header {
 
 
 
-#logo path:nth-child(2) { /* Letter E animation */
+#logo path:nth-child(2) {
+    /* Letter E animation */
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 0.3s;
 
 }
 
-#logo path:nth-child(3) {/* Letter I animation */
+#logo path:nth-child(3) {
+    /* Letter I animation */
     stroke-dasharray: 185.07px;
     stroke-dashoffset: 185.07px;
     animation: text-anime 2s ease forwards 0.6s;
 
 }
 
-#logo path:nth-child(4) {/* Letter G animation */
+#logo path:nth-child(4) {
+    /* Letter G animation */
     stroke-dasharray: 453.67px;
     stroke-dashoffset: 453.67px;
     animation: text-anime 2s ease forwards 0.9s;
 
 }
 
-#logo path:nth-child(5) {/* Letter H animation */
+#logo path:nth-child(5) {
+    /* Letter H animation */
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 1.2s;
 
 }
 
-#logo path:nth-child(6) {/* Letter T animation */
+#logo path:nth-child(6) {
+    /* Letter T animation */
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 1.5s;
 
 }
 
-#logo path:nth-child(7) {/* Sign "&" animation */
+#logo path:nth-child(7) {
+    /* Sign "&" animation */
     stroke-dasharray: 482.84px;
     stroke-dashoffset: 482.84px;
     animation: text-anime 2s ease forwards 1.8s;
 }
 
-#logo path:nth-child(8) {/* Letter H animation */
+#logo path:nth-child(8) {
+    /* Letter H animation */
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 2.1s;
 }
 
 
-#logo path:nth-child(9) {/* Letter E animation */
+#logo path:nth-child(9) {
+    /* Letter E animation */
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 2.4s;
 }
 
-#logo path:nth-child(10) {/* Letter A animation */
+#logo path:nth-child(10) {
+    /* Letter A animation */
     stroke-dasharray: 395.49px;
     stroke-dashoffset: 395.49px;
     animation: text-anime 2s ease forwards 2.7s;
 }
 
-#logo path:nth-child(11) {/* Letter L animation */
+#logo path:nth-child(11) {
+    /* Letter L animation */
     stroke-dasharray: 262.67px;
     stroke-dashoffset: 267.67px;
     animation: text-anime 2s ease forwards 3s;
 }
 
-#logo path:nth-child(12) {/* Letter T animation */
+#logo path:nth-child(12) {
+    /* Letter T animation */
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 3s;
 }
 
-#logo path:nth-child(13) {/* Letter H animation */
+#logo path:nth-child(13) {
+    /* Letter H animation */
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 3s;
 }
 
 
-     /* END Weight & Health text's strokes animation */
+/* END Weight & Health text's strokes animation */
 
+/* Weight & Health's keyframes*/
 
-        /* Weight & Health's keyframes*/
-
-
-@keyframes text-anime { /* Weight & Health - stroke's keyframe */
+@keyframes text-anime {
+    /* Weight & Health - stroke's keyframe */
     to {
         stroke-dashoffset: 0px;
     }
 }
 
-@keyframes wh-move-top {/* Weight & Health - moving top's keyframe*/
+@keyframes wh-move-top {
+    /* Weight & Health - moving top's keyframe*/
     from {
         top: 35%;
     }
@@ -424,8 +450,8 @@ header {
     }
 }
 
-@keyframes fill-anime {/* Weight & Health - filing's keyframe*/
-
+@keyframes fill-anime {
+    /* Weight & Health - filing's keyframe*/
     from {
 
         fill: transparent;
@@ -437,7 +463,8 @@ header {
 }
 
 
-@keyframes consultation { /* Consultation's text - opacity's keyframe */
+@keyframes consultation {
+    /* Consultation's text - opacity's keyframe */
     from {
         opacity: 0;
     }
@@ -449,57 +476,101 @@ header {
 
 
 
-@keyframes diana-move-bottom{ /* Diana's text - moving bottom's keyframe */
-    from{
+@keyframes diana-move-bottom {
+    /* Diana's text - moving bottom's keyframe */
+    from {
         opacity: 0;
-        top:40%;
+        top: 40%;
     }
-    to{
+    to {
         opacity: 1;
-        top:65%;
+        top: 65%;
     }
-    
+
 }
 
 
-@keyframes diana-opacity{/* Diana's text - opacity's keyframe */
-    from{
+@keyframes diana-opacity {
+    /* Diana's text - opacity's keyframe */
+    from {
         opacity: 0;
-       
+
     }
-    to{
+    to {
         opacity: 1;
-       
+
     }
 }
 
 
-@keyframes btn-signUp{/* Sign up's keyframe */
-    from{
+@keyframes btn-signUp {
+    /* Sign up's keyframe */
+    from {
         opacity: 0;
         bottom: -10%;
     }
-    to{
-      opacity: 1;
-      bottom: 6%;
-        
+    to {
+        opacity: 1;
+        bottom: 6%;
+
     }
 }
 
-      /* END Weight & Health's keyframes*/
+/* END Weight & Health's keyframes*/
 
-
-  /* END Background slideshow's text */
-
+/* END Background slideshow's text */
 
 /* ################ END SLIDESHOW SECTION ########### */
 
+/* ################ SIGN UP MODAL ################### */
+
+.modal-dialog {
+    /* Setting height to modal box */
+    height: 100%;
+    
+}
+
+.modal-content {
+    /* Positioning modal container in center  */
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+.modal-body {
+    /* Positioning modal body content to center  */
+    width: 70%;
+    margin: 0px auto;
+}
+
+.modal-body input{
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.modal-body textarea{
+    background-color: rgba(255,255,255, 0.5);
+}
 
 
 
+.modal-header h3 {
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    font-weight: 200;
+    padding: 15px 20px;
+
+}
 
 
+.btn-moddal-wrapper{/* Centering modal button */
+    text-align: center;
+}
 
+/* ################ END SIGN UP MODAL ############### */
 
 /* ######## RESPONSIVE DESIGN ######### */
 
@@ -518,5 +589,12 @@ header {
 }
 
 /* END Responsive typography scale for mobile and tablet */
+
+@media (min-width: 576px) {
+    /* Changing Sign Up's default width size */
+    .modal-dialog {
+        max-width: 800px;
+    }
+}
 
 /* ######## END RESPONSIVE DESIGN ################### */

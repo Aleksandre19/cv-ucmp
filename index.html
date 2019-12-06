@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Document</title>
 
-   
+
 </head>
 
 <body>
@@ -55,8 +55,10 @@
             <section class="sections slideshow">
                 <!-- Here goes background slideshow's images -->
             </section>
-             <div class="text-container"> <!-- Welcoming text animations's container-->
-                 <div id="wh-container"> <!-- Weight & Health's svg file container  -->
+            <div class="text-container">
+                <!-- Welcoming text animations's container-->
+                <div id="wh-container">
+                    <!-- Weight & Health's svg file container  -->
                     <!-- Weight & Health's svg file -->
                     <svg id="logo" width="973" height="97" viewBox="0 0 973 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d)">
@@ -86,16 +88,18 @@
                             </filter>
                         </defs>
                     </svg>
-                     <!-- /Weight & Health's svg file -->
-                    <span class="sr-only"> Weight & Health </span>  <!-- Span for screen reader -->
-                </div><!-- Weight & Health's svg file container  -->
-                
+                    <!-- /Weight & Health's svg file -->
+                    <span class="sr-only"> Weight & Health </span>
+                    <!-- Span for screen reader -->
+                </div>
+                <!-- Weight & Health's svg file container  -->
+
                 <!-- Consultation section -->
                 <div id="free-consultation-text">
                     <h1>Free Consultation With </h1>
                 </div>
                 <!-- /Consultation section -->
-                
+
                 <!-- Diana's section -->
                 <div id="diana">
                     <h2>
@@ -103,10 +107,12 @@
                     </h2>
                 </div>
                 <!--/ Diana's section -->
-                
-                <p><button class="btn btn-lg btn-success btn-signUp">Sign Up</button></p><!-- Sing up button -->
-                
-             </div><!-- /Welcoming text animations's container-->
+
+                <p><button class="btn btn-lg btn-signUp" data-toggle="modal" data-target="#signUpModal">Sign Up</button></p>
+                <!-- Sing up button -->
+
+            </div>
+            <!-- /Welcoming text animations's container-->
         </div>
         <!-- /Slideshow section-->
 
@@ -154,12 +160,51 @@
 
     </div>
     <!-- / All site wrapper div -->
-     <script>
-        const me = document.querySelectorAll("#logo path");
-        for(let i = 0; i < me.length; i++){
-            console.log(`Letter ${i} is ${me[i].getTotalLength()}`);
-        }
-    </script>
+
+    <!-- Sign up pop up -->
+    <div id="modalContainer">
+        <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>
+                            If you wan to have free consultation and more information than please fill the from below and i will reach you within 24 hours
+                        </h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Example label</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="btn-moddal-wrapper">
+                            <button type="submit" class="btn btn-modal">Submit</button>
+                            </p>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Sign up pop up -->
+
+        <!-- Bootstrap's javascript links-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- /Bootstrap's javascript links-->
 </body>
 
 </html>
