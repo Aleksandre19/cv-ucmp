@@ -50,7 +50,8 @@ body {
 /* #################### HEADER ###################### */
 
 header {
-    height: 130px;
+    height: 100px;
+    /*height: 130px;*/
     background-color: rgba(0, 0, 0, 0.35);
     position: fixed;
     z-index: 1;
@@ -59,21 +60,40 @@ header {
 
 /*  Main Menu */
 
+
 .main-menu,
 .social-links a {
     /* Aligning menu links and social icons on one line */
     line-height: 120px;
 }
 
+
+.navbar{/* Overwriting bootstrap's styling */
+    padding-top: 5%;
+}
+
+
+.navbar-light .navbar-toggler {
+    border: 2px solid;
+    border-color: rgba(255,255,255, 0.5);
+}
 .main-menu {
     /* Marging menu from left */
-    margin-left: 2%;
+    /*margin-left: 2%;*/
+   
+   
+    
 }
+
+
+
 
 .main-menu li {
     list-style: none;
-    display: inline;
-    margin-left: 25px;
+    line-height: 50px;
+    width:60%;
+    /* display: inline; */
+    /* margin-left: 25px; */
 }
 
 .main-menu li a {
@@ -312,9 +332,16 @@ header {
     animation: btn-signUp 1s ease forwards 4s;
 }
 
+/*ATANTION after click blue border is apearign which needs to be checked*/
 
-
-.btn-signUp:hover, .btn-modal:hover {/* Welcoming text's & modal sign up button's hovering */
+.btn-signUp:hover,
+.btn-signUp:active,
+.btn-signUp:focus,
+.btn-signUp:active:focus,
+.btn-modal:hover,
+.btn-modal:active,
+.btn-modal:focus,
+.btn-modal:active:focus {/* Welcoming text's & modal sign up button's hovering */
     /* Welcome text's sign up button hover */
     background-color: #a83e00;
     border: 1px solid #a83e00;
@@ -546,10 +573,12 @@ header {
 }
 
 .modal-body input{
+    /* Setting transparancy to modal form's inputs  */
     background-color: rgba(255,255,255, 0.5);
 }
 
 .modal-body textarea{
+    /* Setting transparancy to modal form's textarea */
     background-color: rgba(255,255,255, 0.5);
 }
 
