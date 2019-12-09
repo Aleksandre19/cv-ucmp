@@ -80,7 +80,7 @@ header {
 /* Burger menu */
 
 .navbar-light .navbar-toggler {
-    padding-left: 17px;
+    padding-left: 6px;
     padding-top: 20px;
     font-size: 1.6rem;
     border: 1px solid;
@@ -113,12 +113,15 @@ header {
 .main-menu li {
     list-style: none;
     line-height: 50px;
-    width:60%;
+    width:100%;
+    
     /* display: inline; */
     /* margin-left: 25px; */
 }
 
 .main-menu li a {
+    display: block;
+    
     font-family: "Poiret One";
     font-size: 1em;
     text-transform: uppercase;
@@ -129,6 +132,8 @@ header {
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
+
+
 
 .main-menu li a:hover {
     text-decoration: none;
@@ -142,7 +147,7 @@ header {
 .social-links {
     /* Aligning social links to right */
     text-align: center;
-    padding-left: 31px;
+    padding-left: 25px;
     padding-right: 0;
 }
 
@@ -185,14 +190,14 @@ header {
 
 .slideshow {
     height: 100%;
-    background: url("../images/food-lg.jpg");
+    background: url("../images/food-sm.jpg");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
-    animation: slideshow-w 20s infinite;
-    -webkit-animation: slideshow-w 20s infinite;
-    -moz-animation: slideshow-w 20s infinite;
-    -o-animation: slideshow-w 20s infinite;
+    animation: slideshow-w 20s infinite 1s;
+    -webkit-animation: slideshow-w 20s infinite 1s;
+    -moz-animation: slideshow-w 20s infinite 1s;
+    -o-animation: slideshow-w 20s infinite 1s;
 }
 
 
@@ -202,51 +207,67 @@ header {
     /* Animation slide transition number 1 */
     0% {
         transform: scale(1);
-        background: url("../images/food-lg.jpg");
+        background: url("../images/food-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
 
     }
     14.28% {
         transform: scale(1.1);
-        background: url("../images/yoga-lg.jpg");
+        background: url("../images/yoga-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
 
     }
 
     /* Animation slide transition number 2 */
     28.56% {
         transform: scale(1.1);
-        background: url("../images/yoga-lg.jpg");
+        background: url("../images/yoga-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     42.84% {
         transform: scale(1);
-        background: url("../images/family-lg.jpg");
+        background: url("../images/family-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 
     /* Animation slide transition number 3 */
     57.12% {
         transform: scale(1);
-        background: url("../images/family-lg.jpg");
+        background: url("../images/family-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     71.4% {
         transform: scale(1.1);
-        background: url("../images/food-lg.jpg");
+        background: url("../images/food-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     85.68% {
         transform: scale(1.1);
-        background: url("../images/food-lg.jpg");
+        background: url("../images/food-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     100% {
         transform: scale(1);
-        background: url("../images/food-lg.jpg");
+        background: url("../images/food-sm.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 }
