@@ -612,8 +612,9 @@ header {
 
 .modal-content {
     /* Positioning modal container in center  */
+    left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     color: rgba(0, 0, 0, 0.6);
     font-size: 1em;
     background-color: rgba(255, 255, 255, 0.8);
@@ -670,6 +671,16 @@ header {
 
 /* ######## RESPONSIVE DESIGN ######### */
 
+
+
+@media (max-width: 320px){
+    .modal-header h3{
+        font-size: 1.2em;
+        line-height: 28px;
+        margin-top: 8px;
+    }
+}
+
 /* Responsive typography scale for mobile and tablet */
 
 @media (min-width: 576px) {
@@ -678,17 +689,13 @@ header {
         font-size: 1.414em;
     }
 
+    .modal-dialog {
+        max-width: 800px;
+    }
 
 }
 
 /* END Responsive typography scale for mobile and tablet */
-
-@media (min-width: 576px) {
-    /* Changing Sign Up's default width size */
-    .modal-dialog {
-        max-width: 800px;
-    }
-}
 
 
 /* Styling for tablets */
@@ -737,6 +744,13 @@ header {
     .social-links i {
         /* Aligning menu links and social icons on one line */
         line-height: 40px;
+    }
+
+    .modal-content {
+
+        padding: 5% 0%;
+        width: 90%;
+
     }
 
     /* END Styling animation's text for tablets */
