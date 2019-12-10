@@ -203,6 +203,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     animation: slideshow-w 20s infinite 1s;
     -webkit-animation: slideshow-w 20s infinite 1s;
     -moz-animation: slideshow-w 20s infinite 1s;
@@ -220,6 +221,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
     14.28% {
@@ -228,6 +230,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
@@ -238,6 +241,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     42.84% {
         transform: scale(1);
@@ -245,6 +249,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
@@ -255,6 +260,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     71.4% {
         transform: scale(1.1);
@@ -262,6 +268,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     85.68% {
@@ -270,6 +277,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     100% {
         transform: scale(1);
@@ -277,6 +285,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
 }
@@ -672,6 +681,7 @@ header {
 /* ######## RESPONSIVE DESIGN ######### */
 
 
+/* Styling for divacies less than 320px */
 
 @media (max-width: 320px){
     .modal-header h3{
@@ -681,6 +691,10 @@ header {
     }
 }
 
+/* END Styling for divacies less than 320px */
+
+            /* * */
+            
 /* Responsive typography scale for mobile and tablet */
 
 @media (min-width: 576px) {
@@ -692,23 +706,7 @@ header {
     .modal-dialog {
         max-width: 800px;
     }
-
-}
-
-/* END Responsive typography scale for mobile and tablet */
-
-
-/* Styling for tablets */
-
-/* Styling background sllideshow for tablets */
-
-@media (min-width: 768px) {
-
-    .slideshow {
-        background: url("../images/food-md.jpg");
-    }
-
-    /* Styling animation's text for tablets */
+    
     #free-consultation-text h1,
     #diana h2 {
         font-size: 3.5em;
@@ -719,31 +717,22 @@ header {
         font-size: 2em;
         padding: 10px 50px;
     }
-
-    .slideshow {
-        height: 100%;
-        background: url("../images/food-ms.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        animation: slideshow-w-md 20s infinite 1s;
-        -webkit-animation: slideshow-w-md 20s infinite 1s;
-        -moz-animation: slideshow-w-md 20s infinite 1s;
-        -o-animation: slideshow-w-md 20s infinite 1s;
-    }
-
     .header {
         padding: 0;
+    }
+    
+    .header .row{
+        margin-top: 10px;
     }
 
     .navbar-nav li {
         text-align: center;
     }
-
-    .main-menu,
-    .social-links i {
-        /* Aligning menu links and social icons on one line */
-        line-height: 40px;
+    
+    .navbar-light,
+    .navbar-toggler,
+    .social-links .row {
+        line-height: 45px;
     }
 
     .modal-content {
@@ -753,12 +742,49 @@ header {
 
     }
 
+}
+
+/* END Responsive typography scale for mobile and tablet */
+
+            /* * */ 
+            
+/* Styling for tablets */
+
+/* Styling background sllideshow for tablets */
+
+@media (min-width: 768px) {
+
+    /* Styling animation's text for tablets */
+    .main-menu,
+    .social-links i {
+        line-height: 40px;
+    }
+    
+    .header .row{
+        margin-top: 3%;
+    }
+
+    .slideshow {
+        height: 100%;
+        background: url("../images/food-md.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        animation: slideshow-w-md 20s infinite 1s;
+        -webkit-animation: slideshow-w-md 20s infinite 1s;
+        -moz-animation: slideshow-w-md 20s infinite 1s;
+        -o-animation: slideshow-w-md 20s infinite 1s;
+    }
+
+    
+
     /* END Styling animation's text for tablets */
 }
 
 /* END Styling background sllideshow for tablets */
 
-/* * */
+                    /* * */
 
 /* Styling animation's text for table pro */
 
@@ -771,7 +797,7 @@ header {
 
 /* END Styling animation's text for table pro */
 
-/* * */
+                    /* * */
 
 /* Slideshow for tablets */
 
@@ -784,6 +810,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
     14.28% {
@@ -792,6 +819,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
@@ -802,6 +830,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     42.84% {
         transform: scale(1);
@@ -809,6 +838,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
@@ -819,6 +849,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     71.4% {
         transform: scale(1.1);
@@ -826,6 +857,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     85.68% {
@@ -834,6 +866,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     100% {
         transform: scale(1);
@@ -841,6 +874,7 @@ header {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
 }
@@ -849,5 +883,85 @@ header {
 /* END Slideshow for tablets */
 
 /* END Styling for tablets */
+
+
+/* Styling for desktop */
+        
+    /* Slideshow */
+        
+        
+        
+        @keyframes slideshow-w-lg {
+
+            /* Animation slide transition number 1 */
+            0% {
+                transform: scale(1);
+                background: url("../images/food-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+        
+            }
+            14.28% {
+                transform: scale(1.1);
+                background: url("../images/yoga-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+        
+            }
+        
+            /* Animation slide transition number 2 */
+            28.56% {
+                transform: scale(1.1);
+                background: url("../images/yoga-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            42.84% {
+                transform: scale(1);
+                background: url("../images/family-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+        
+            /* Animation slide transition number 3 */
+            57.12% {
+                transform: scale(1);
+                background: url("../images/family-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            71.4% {
+                transform: scale(1.1);
+                background: url("../images/food-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+            85.68% {
+                transform: scale(1.1);
+                background: url("../images/food-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            100% {
+                transform: scale(1);
+                background: url("../images/food-lg.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+        }
+    /* END Slideshow */
+
+/* END Styling for desktop */
 
 /* ######## END RESPONSIVE DESIGN ################### */
