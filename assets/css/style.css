@@ -62,7 +62,7 @@ header {
 }
 
 .header{
-    padding: 0;
+    padding: 0% 0% 3% 0%;
 }
 
 .header .row{
@@ -88,9 +88,8 @@ header {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(../images/burger_icon.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,221,219, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
 }
 
 
@@ -660,16 +659,13 @@ header {
 
 /* Responsive typography scale for mobile and tablet */
 
-@media (min-width: 376px) {
+@media (min-width: 576px) {
     /* Adjusting menu links size after mobile  */
     .main-menu li a {
         font-size: 1.414em;
     }
 
-    .social-links a {
-        /* Adjusting social links size on tablet and mobile */
-        font-size: 1.999em;
-    }
+    
 }
 
 /* END Responsive typography scale for mobile and tablet */
@@ -680,5 +676,140 @@ header {
         max-width: 800px;
     }
 }
+
+
+/* Styling for tablets */
+
+    /* Styling background sllideshow for tablets */
+    
+    @media (min-width: 768px){
+         
+        .slideshow{
+             background: url("../images/food-md.jpg");
+         }
+         
+         /* Styling animation's text for tablets */
+    
+            #free-consultation-text h1, #diana h2{
+                font-size: 3.5em;
+            }
+            
+            .btn-signUp,.btn-modal {
+                font-size: 2em;
+                padding: 10px 50px;
+            }
+            
+            .slideshow {
+                height: 100%;
+                background: url("../images/food-ms.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                animation: slideshow-w-md 20s infinite 1s;
+                -webkit-animation: slideshow-w-md 20s infinite 1s;
+                -moz-animation: slideshow-w-md 20s infinite 1s;
+                -o-animation: slideshow-w-md 20s infinite 1s;
+            }
+ 
+        /* END Styling animation's text for tablets */
+         
+       
+    }
+        
+    /* END Styling background sllideshow for tablets */
+    
+    
+    
+                     /* * */
+                     
+    /* Styling animation's text for table pro */
+    
+    @media (min-width: 1024px){
+
+        .text-container{
+            height: 50%;
+        }   
+    }
+    
+    /* END Styling animation's text for table pro */
+            
+            /* * */
+        
+    /* Slideshow for tablets */
+    
+        @keyframes slideshow-w-md {
+        
+            /* Animation slide transition number 1 */
+            0% {
+                transform: scale(1);
+                background: url("../images/food-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+        
+            }
+            14.28% {
+                transform: scale(1.1);
+                background: url("../images/yoga-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+        
+            }
+        
+            /* Animation slide transition number 2 */
+            28.56% {
+                transform: scale(1.1);
+                background: url("../images/yoga-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            42.84% {
+                transform: scale(1);
+                background: url("../images/family-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+        
+            /* Animation slide transition number 3 */
+            57.12% {
+                transform: scale(1);
+                background: url("../images/family-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            71.4% {
+                transform: scale(1.1);
+                background: url("../images/food-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+            85.68% {
+                transform: scale(1.1);
+                background: url("../images/food-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            100% {
+                transform: scale(1);
+                background: url("../images/food-md.jpg");
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+        }
+
+    
+    /* END Slideshow for tablets */
+
+/* END Styling for tablets */
 
 /* ######## END RESPONSIVE DESIGN ################### */
