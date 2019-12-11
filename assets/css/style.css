@@ -133,15 +133,14 @@ header {
 .main-menu li {
     list-style: none;
     line-height: 50px;
-    width: 100%;
+    margin-left: 30px;
 
     /* display: inline; */
     /* margin-left: 25px; */
 }
 
 .main-menu li a {
-    display: block;
-
+    
     font-family: "Poiret One";
     font-size: 1em;
     text-transform: uppercase;
@@ -934,6 +933,11 @@ header {
             .btn-signUp{
                 animation: btn-signUp-lg 1s ease forwards 4s;
             }
+            
+            .navbar-nav{
+                width: 650px;
+            }
+            
             
         }
         
