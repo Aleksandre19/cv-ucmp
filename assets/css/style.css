@@ -76,6 +76,7 @@ header {
 
 .navbar-nav {
     width: 90%;
+    margin-left: 35px;
 }
 
 .top-manu-wrapper {
@@ -706,9 +707,6 @@ header {
 
 @media (min-width: 576px) {
     /* Adjusting menu links size after mobile  */
-    .main-menu li a {
-        font-size: 1.414em;
-    }
 
     .modal-dialog {
         max-width: 800px;
@@ -716,20 +714,11 @@ header {
     
     #free-consultation-text h1,
     #diana h2 {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 
-    .btn-signUp,
-    .btn-modal {
-        font-size: 2em;
-        padding: 10px 50px;
-    }
     .header {
         padding: 0;
-    }
-
-    .navbar-nav li {
-        text-align: center;
     }
     
     .navbar-light,
@@ -758,6 +747,14 @@ header {
 @media (min-width: 768px) {
 
     /* Styling animation's text for tablets */
+    
+    .main-menu li a {
+        font-size: 1.414em;
+    }
+    
+    .navbar-nav li{
+        text-align: center;
+    }
     .main-menu,
     .social-links i {
         line-height: 40px;
@@ -791,6 +788,24 @@ header {
 }
 
 /* END Styling background sllideshow for tablets */
+
+                /* * */
+
+/* Hidding social icons less than 256px */
+    
+    @media (max-width: 256px){
+        
+        .sl-wrapper a i{
+            display: none;
+        }
+        
+        .btn-signUp{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+/* END Hidding social icons less than 256px */
 
                     /* * */
 
@@ -897,10 +912,44 @@ header {
         
     /* Slideshow */
         
-        @media (min-width:){
+        @media (min-width: 992px){
+            
+            .slideshow {
+                height: 100%;
+                background: url("../images/food-lg.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+                animation: slideshow-w-lg 20s infinite 1s;
+                -webkit-animation: slideshow-w-lg 20s infinite 1s;
+                -moz-animation: slideshow-w-lg 20s infinite 1s;
+                -o-animation: slideshow-w-lg 20s infinite 1s;
+            }
+            
+            .text-container{
+                height: 67%;
+            }
+            
+            .btn-signUp{
+                animation: btn-signUp-lg 1s ease forwards 4s;
+            }
             
         }
         
+        
+        @keyframes btn-signUp-lg {
+            /* Sign up's keyframe */
+            from {
+                opacity: 0;
+                bottom: -10%;
+            }
+            to {
+                opacity: 1;
+                bottom: 8%;
+        
+            }
+        }
         
         @keyframes slideshow-w-lg {
 
@@ -911,7 +960,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
-        
+                background-size: cover;
             }
             14.28% {
                 transform: scale(1.1);
@@ -919,6 +968,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
         
             }
         
@@ -929,6 +979,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
             42.84% {
                 transform: scale(1);
@@ -936,6 +987,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
         
         
@@ -946,6 +998,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
             71.4% {
                 transform: scale(1.1);
@@ -953,6 +1006,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
         
             85.68% {
@@ -961,6 +1015,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
             100% {
                 transform: scale(1);
@@ -968,6 +1023,7 @@ header {
                 background-attachment: fixed;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
             }
         
         }
