@@ -30,6 +30,23 @@ body {
     padding: 0;
 }
 
+.section-title{
+    font-family: Monolith;
+    font-size: 1.414em;
+    text-transform: uppercase;
+    color: #00dddb;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.section-title-underline{
+    width: 90%;
+    height: 0px;
+    margin: 20px auto;
+    border: 1px solid #00dddb;
+}
+
 
 @font-face {
     font-family: Monolith;
@@ -1092,6 +1109,51 @@ header {
 
 
 /* ######## INDIVIDUAL APPROACH ##################### */
+    
+.individual-section{
+    
+    color: #777777;
+    font-size: 1em;
+    background-image: url(../images/individual/lg/individual-bg-lg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: auto;
+    
+} 
 
+.description p{
+
+    width:90%;
+    margin: 40px auto;
+    padding:5px;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.individual-steps .row{
+    margin:0;
+}
+
+.individual-steps{
+    width:90%;
+    margin:0 auto;
+   
+}
+
+
+.steps-title{
+    font-family: Monolith;
+    font-size: 1.414em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+
+.gathering-title{
+        
+
+     
+}
 
 /* ######## END INDIVIDUAL APPROACH ################# */
