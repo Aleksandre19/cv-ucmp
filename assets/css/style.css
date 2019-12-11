@@ -133,7 +133,7 @@ header {
 .main-menu li {
     list-style: none;
     line-height: 50px;
-    margin-left: 30px;
+    margin-left: 0px;
 
     /* display: inline; */
     /* margin-left: 25px; */
@@ -181,6 +181,14 @@ header {
     color: #00dddb;
     opacity: 0.6;
     margin: 0px 7px;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
+.social-links a i:hover{
+    opacity: 1;
 }
 
 .sl-wrapper{
@@ -706,6 +714,10 @@ header {
 
 @media (min-width: 576px) {
     /* Adjusting menu links size after mobile  */
+    
+    .main-menu li{
+        margin-left: 30px;
+    }
 
     .modal-dialog {
         max-width: 800px;
@@ -1077,3 +1089,9 @@ header {
 
 
 /* ######## END RESPONSIVE DESIGN ################### */
+
+
+/* ######## INDIVIDUAL APPROACH ##################### */
+
+
+/* ######## END INDIVIDUAL APPROACH ################# */
