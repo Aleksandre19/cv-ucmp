@@ -739,6 +739,43 @@ header {
 
             /* * */ 
             
+/* Styling for turned over devises */
+
+    @media (max-height: 414px){
+        #free-consultation-text h1{
+            font-size: 1.3em;
+        }
+        
+        #diana h2{
+            font-size: 1.6em;
+        }
+        
+        .btn-signUp{
+            padding-left: 20px;
+            padding-right: 20px;
+            animation: btn-signUp-overTurned 1s ease forwards 4s;
+        }
+        
+        
+    }
+    
+    @keyframes btn-signUp-overTurned {
+        /* Sign up's keyframe */
+        from {
+            opacity: 0;
+            bottom: -15%;
+        }
+        to {
+            opacity: 1;
+            bottom: -8%;
+    
+        }
+    }
+
+/* END Styling for turned over devises */
+
+            /* * */
+            
 /* Styling for tablets */
 
 /* Styling background sllideshow for tablets */
@@ -786,40 +823,6 @@ header {
     /* END Styling animation's text for tablets */
 }
 
-/* END Styling background sllideshow for tablets */
-
-                /* * */
-
-/* Hidding social icons less than 256px */
-    
-    @media (max-width: 256px){
-        
-        .sl-wrapper a i{
-            display: none;
-        }
-        
-        .btn-signUp{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-    }
-
-/* END Hidding social icons less than 256px */
-
-                    /* * */
-
-/* Styling animation's text for table pro */
-
-@media (min-width: 1024px) {
-
-    .text-container {
-        height: 50%;
-    }
-}
-
-/* END Styling animation's text for table pro */
-
-                    /* * */
 
 /* Slideshow for tablets */
 
@@ -903,6 +906,43 @@ header {
 
 
 /* END Slideshow for tablets */
+
+/* END Styling background sllideshow for tablets */
+
+                /* * */
+
+/* Hidding social icons less than 256px */
+    
+    @media (max-width: 256px){
+        
+        .sl-wrapper a i{
+            display: none;
+        }
+        
+        .btn-signUp{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+/* END Hidding social icons less than 256px */
+
+                    /* * */
+
+/* Styling animation's text for table pro */
+
+@media (min-width: 1024px) {
+
+    .text-container {
+        height: 50%;
+    }
+}
+
+/* END Styling animation's text for table pro */
+
+                    /* * */
+
+
 
 /* END Styling for tablets */
 
@@ -1034,5 +1074,6 @@ header {
     /* END Slideshow */
 
 /* END Styling for desktop */
+
 
 /* ######## END RESPONSIVE DESIGN ################### */
