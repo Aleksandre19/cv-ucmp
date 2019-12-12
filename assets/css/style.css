@@ -36,7 +36,7 @@ body {
     text-transform: uppercase;
     color: #00dddb;
     width: 90%;
-    margin: 50px auto;
+    margin: 80px auto;
     text-align: center;
 }
 
@@ -1109,6 +1109,12 @@ header {
 
 
 /* ######## INDIVIDUAL APPROACH ##################### */
+
+
+.individual-title{
+    
+    margin-bottom: 20px;
+}
     
 .individual-section{
     
@@ -1148,12 +1154,44 @@ header {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    margin: 40px 0px 20px 0px;
 }
 
-.gathering-title{
-        
-
-     
+.gathering-title, .gathering-title-divider{
+    color: #d9b23d;
 }
+
+
+.separation-title, .separation-title-divider{
+    color: #f24822;
+}
+
+.research-title, .research-title-divider{
+    color: #025e73;
+}
+
+.individual-icons{
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 5em;
+    color: #00dddb;
+}
+
+.steps-text{
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+
+.individual-title-divider{
+    
+    width: 50px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+
+
+
 
 /* ######## END INDIVIDUAL APPROACH ################# */
