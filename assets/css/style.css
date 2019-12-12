@@ -30,20 +30,21 @@ body {
     padding: 0;
 }
 
-.section-title{
+.section-title {
     font-family: Monolith;
     font-size: 1.414em;
     text-transform: uppercase;
-    color: #00dddb;
+    color: #595959;
     width: 90%;
     margin: 80px auto;
     text-align: center;
 }
 
-.section-title-underline{
+.section-title-underline {
     width: 277px;
     height: 0px;
     margin: 20px auto;
+    margin-bottom: 60px;
     border: 1px solid #00dddb;
 }
 
@@ -100,17 +101,17 @@ header {
     margin: 0px 25px 0px 0px;
 }
 
-.col-8{
+.col-8 {
     padding-left: 0;
     padding-right: 0;
 }
 
-.container-fluid{
+.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
 
-.menuSlWrapper{
+.menuSlWrapper {
     margin-top: 3%;
 }
 
@@ -157,7 +158,7 @@ header {
 }
 
 .main-menu li a {
-    
+
     font-family: "Poiret One";
     font-size: 1em;
     text-transform: uppercase;
@@ -179,7 +180,6 @@ header {
 /* END Main Menu */
 
 /* Social Links */
-
 
 /* .social-links a {
     text-decoration: none;
@@ -204,11 +204,11 @@ header {
     -o-transition: opacity 0.3s ease;
 }
 
-.social-links a i:hover{
+.social-links a i:hover {
     opacity: 1;
 }
 
-.sl-wrapper{
+.sl-wrapper {
     position: absolute;
     right: 16%;
 }
@@ -712,11 +712,10 @@ header {
 
 /* ######## RESPONSIVE DESIGN ######### */
 
-
 /* Styling for divacies less than 320px */
 
-@media (max-width: 320px){
-    .modal-header h3{
+@media (max-width: 320px) {
+    .modal-header h3 {
         font-size: 1.2em;
         line-height: 28px;
         margin-top: 8px;
@@ -725,21 +724,20 @@ header {
 
 /* END Styling for divacies less than 320px */
 
-            /* * */
-            
+/* * */
+
 /* Responsive typography scale for mobile and tablet */
 
 @media (min-width: 576px) {
     /* Adjusting menu links size after mobile  */
-    
-    .main-menu li{
+    .main-menu li {
         margin-left: 30px;
     }
 
     .modal-dialog {
         max-width: 800px;
     }
-    
+
     #free-consultation-text h1,
     #diana h2 {
         font-size: 2.5em;
@@ -748,7 +746,7 @@ header {
     .header {
         padding: 0;
     }
-    
+
     .navbar-light,
     .navbar-toggler,
     .social-links .row {
@@ -766,45 +764,45 @@ header {
 
 /* END Responsive typography scale for mobile and tablet */
 
-            /* * */ 
-            
+/* * */
+
 /* Styling for turned over devises */
 
-    @media (max-height: 414px){
-        #free-consultation-text h1{
-            font-size: 1.3em;
-        }
-        
-        #diana h2{
-            font-size: 1.6em;
-        }
-        
-        .btn-signUp{
-            padding-left: 20px;
-            padding-right: 20px;
-            animation: btn-signUp-overTurned 1s ease forwards 4s;
-        }
-        
-        
+@media (max-height: 414px) {
+    #free-consultation-text h1 {
+        font-size: 1.3em;
     }
-    
-    @keyframes btn-signUp-overTurned {
-        /* Sign up's keyframe */
-        from {
-            opacity: 0;
-            bottom: -15%;
-        }
-        to {
-            opacity: 1;
-            bottom: -8%;
-    
-        }
+
+    #diana h2 {
+        font-size: 1.6em;
     }
+
+    .btn-signUp {
+        padding-left: 20px;
+        padding-right: 20px;
+        animation: btn-signUp-overTurned 1s ease forwards 4s;
+    }
+
+
+}
+
+@keyframes btn-signUp-overTurned {
+    /* Sign up's keyframe */
+    from {
+        opacity: 0;
+        bottom: -15%;
+    }
+    to {
+        opacity: 1;
+        bottom: -8%;
+
+    }
+}
 
 /* END Styling for turned over devises */
 
-            /* * */
-            
+/* * */
+
 /* Styling for tablets */
 
 /* Styling background sllideshow for tablets */
@@ -812,25 +810,24 @@ header {
 @media (min-width: 768px) {
 
     /* Styling animation's text for tablets */
-    
     .main-menu li a {
         font-size: 1.414em;
     }
-    
-    .navbar-nav li{
+
+    .navbar-nav li {
         text-align: center;
     }
     .main-menu,
     .social-links i {
         line-height: 40px;
     }
-    
-    .header .sl-wrapper{
+
+    .header .sl-wrapper {
         margin-top: 3%;
         right: 30%;
     }
-    
-    .menuSlWrapper{
+
+    .menuSlWrapper {
         margin-top: 20px;
     }
 
@@ -847,7 +844,7 @@ header {
         -o-animation: slideshow-w-md 20s infinite 1s;
     }
 
-    
+
 
     /* END Styling animation's text for tablets */
 }
@@ -938,25 +935,25 @@ header {
 
 /* END Styling background sllideshow for tablets */
 
-                /* * */
+/* * */
 
 /* Hidding social icons less than 256px */
-    
-    @media (max-width: 256px){
-        
-        .sl-wrapper a i{
-            display: none;
-        }
-        
-        .btn-signUp{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+
+@media (max-width: 256px) {
+
+    .sl-wrapper a i {
+        display: none;
     }
+
+    .btn-signUp {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 
 /* END Hidding social icons less than 256px */
 
-                    /* * */
+/* * */
 
 /* Styling animation's text for table pro */
 
@@ -969,199 +966,195 @@ header {
 
 /* END Styling animation's text for table pro */
 
-                    /* * */
-
-
+/* * */
 
 /* END Styling for tablets */
 
-
 /* Styling for desktop */
-        
-    /* Slideshow */
-        
-        @media (min-width: 992px){
-            
-            .slideshow {
-                height: 100%;
-                background: url("../images/food-lg.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-attachment: fixed;
-                background-size: cover;
-                animation: slideshow-w-lg 20s infinite 1s;
-                -webkit-animation: slideshow-w-lg 20s infinite 1s;
-                -moz-animation: slideshow-w-lg 20s infinite 1s;
-                -o-animation: slideshow-w-lg 20s infinite 1s;
-            }
-            
-            .text-container{
-                height: 67%;
-            }
-            
-            .btn-signUp{
-                animation: btn-signUp-lg 1s ease forwards 4s;
-            }
-            
-            .navbar-nav{
-                width: 650px;
-            }
-            
-            
-        }
-        
-        
-        @keyframes btn-signUp-lg {
-            /* Sign up's keyframe */
-            from {
-                opacity: 0;
-                bottom: -10%;
-            }
-            to {
-                opacity: 1;
-                bottom: 8%;
-        
-            }
-        }
-        
-        @keyframes slideshow-w-lg {
 
-            /* Animation slide transition number 1 */
-            0% {
-                transform: scale(1);
-                background: url("../images/food-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            14.28% {
-                transform: scale(1.1);
-                background: url("../images/yoga-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-        
-            }
-        
-            /* Animation slide transition number 2 */
-            28.56% {
-                transform: scale(1.1);
-                background: url("../images/yoga-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            42.84% {
-                transform: scale(1);
-                background: url("../images/family-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        
-        
-            /* Animation slide transition number 3 */
-            57.12% {
-                transform: scale(1);
-                background: url("../images/family-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            71.4% {
-                transform: scale(1.1);
-                background: url("../images/food-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        
-            85.68% {
-                transform: scale(1.1);
-                background: url("../images/food-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            100% {
-                transform: scale(1);
-                background: url("../images/food-lg.jpg");
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        
-        }
-    /* END Slideshow */
+/* Slideshow */
+
+@media (min-width: 992px) {
+
+    .slideshow {
+        height: 100%;
+        background: url("../images/food-lg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        animation: slideshow-w-lg 20s infinite 1s;
+        -webkit-animation: slideshow-w-lg 20s infinite 1s;
+        -moz-animation: slideshow-w-lg 20s infinite 1s;
+        -o-animation: slideshow-w-lg 20s infinite 1s;
+    }
+
+    .text-container {
+        height: 67%;
+    }
+
+    .btn-signUp {
+        animation: btn-signUp-lg 1s ease forwards 4s;
+    }
+
+    .navbar-nav {
+        width: 650px;
+    }
+
+
+}
+
+
+@keyframes btn-signUp-lg {
+    /* Sign up's keyframe */
+    from {
+        opacity: 0;
+        bottom: -10%;
+    }
+    to {
+        opacity: 1;
+        bottom: 8%;
+
+    }
+}
+
+@keyframes slideshow-w-lg {
+
+    /* Animation slide transition number 1 */
+    0% {
+        transform: scale(1);
+        background: url("../images/food-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    14.28% {
+        transform: scale(1.1);
+        background: url("../images/yoga-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    /* Animation slide transition number 2 */
+    28.56% {
+        transform: scale(1.1);
+        background: url("../images/yoga-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    42.84% {
+        transform: scale(1);
+        background: url("../images/family-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /* Animation slide transition number 3 */
+    57.12% {
+        transform: scale(1);
+        background: url("../images/family-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    71.4% {
+        transform: scale(1.1);
+        background: url("../images/food-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    85.68% {
+        transform: scale(1.1);
+        background: url("../images/food-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        transform: scale(1);
+        background: url("../images/food-lg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+/* END Slideshow */
 
 /* END Styling for desktop */
 
-
 /* ######## END RESPONSIVE DESIGN ################### */
-
 
 /* ######## INDIVIDUAL APPROACH ##################### */
 
-.individual-steps-wrapper{
+.individual-section-wrapper {
     padding-bottom: 60px;
 }
 
 
-.individual-title{
-    
+.individual-title {
+
     margin-bottom: 20px;
 }
-    
-.individual-section{
-    
+
+.individual-section {
+
     color: #777777;
     font-size: 1em;
     background-image: url(../images/individual/sm/individual-bg-sm.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top right;
     height: auto;
-    
-} 
 
-.description p{
+}
 
-    width:90%;
-    margin: 40px auto;
-    padding:5px;
+.description p {
+
+    width: 90%;
+    margin: 80px auto;
+    padding: 5px;
     text-indent: 20px;
     text-align: justify;
     line-height: 26px;
 }
 
-.individual-desc-icon{
+.individual-desc-icon {
     display: block;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     background-image: url("../images/individual/icon.png");
     background-repeat: no-repeat;
     background-origin: center;
 }
 
-.individual-steps .row{
-    margin:0;
+.individual-steps .row {
+    margin: 0;
 }
 
-.individual-steps{
-    width:90%;
-    margin:0 auto;
-   
+.individual-steps {
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 
-.steps-title{
+.steps-title {
     font-family: Monolith;
     font-size: 1.414em;
     text-transform: uppercase;
@@ -1170,20 +1163,23 @@ header {
     margin: 40px 0px 20px 0px;
 }
 
-.gathering-title, .gathering-title-divider{
+.gathering-title,
+.gathering-title-divider {
     color: #d9b23d;
 }
 
 
-.separation-title, .separation-title-divider{
+.separation-title,
+.separation-title-divider {
     color: #f24822;
 }
 
-.research-title, .research-title-divider{
+.research-title,
+.research-title-divider {
     color: #025e73;
 }
 
-.individual-icons{
+.individual-icons {
     display: block;
     text-align: center;
     margin: 40px auto;
@@ -1191,13 +1187,13 @@ header {
     color: #00dddb;
 }
 
-.steps-text{
+.steps-text {
     text-align: left;
     padding: 0px 0px 0px 10px;
 }
 
-.individual-title-divider{
-    
+.individual-title-divider {
+
     width: 50px;
     border: 1px solid;
     margin: 0 auto;
@@ -1205,20 +1201,122 @@ header {
 
 
 
+
+
 /* RESPONSIVE DESIGN */
 
 /* Tablets */
 
-@media (min-width: 767px){
-    .individual-steps-wrapper{
+@media (min-width: 767px) {
+    .individual-section-wrapper {
         width: 90%;
         margin: 0 auto;
     }
+
 }
 
+/* END Tablets */
+
+/* Desktop */
+
+@media(min-width: 992px) {
+    
+    .all-steps-wrapper{
+        margin-top: 150px;
+    }
+    
+    .individual-title{
+        position: relative;
+        max-width: 340px;
+        margin-top: 100px;
+    }
+    
+    .individual-title:after{
+        content: url("../images/individual/icon.png");
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+    
+    .individual-section-centerer{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .individual-section {
+        background-image: url(../images/individual/lg/individual-bg-lg.png);
+    }
+
+    .description p {
+        width: 900px;
+    }
+
+    .section-title {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .section-title-underline {
+        margin-left: 20px;
+    }
+
+
+    .steps-title-bg {
+        max-width: 100%;
+        height: 142px;
+        position: relative;
+    }
+
+    .gathering-bg{
+        background-image: url("../images/individual/gathering-title-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 142px;
+    }
+
+    .separation-bg{
+        background-image: url("../images/individual/separation-title-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 142px;
+    }
+    
+    .research-bg{
+        background-image: url("../images/individual/research-title-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 142px;
+    }
+    
+    .steps-title {
+        position: absolute;
+        top: -8%;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        font-size: 1.6vw;
+    }
+    
+    .separation-title{
+        font-size: 1.5vw;
+    }
+
+}
+
+/* Fixing sizes for teps's titles */ 
+@media (min-width: 1300px){
+    .steps-title{
+        font-size: 1.414em;
+    }
+}
+/* END Fixing sizes for teps's titles */ 
+
+/* END Desktop */
 
 /* END RESPONSIVE DESIGN */
 
-
-
 /* ######## END INDIVIDUAL APPROACH ################# */
+
+.about-me {
+    height: 100%;
+}
