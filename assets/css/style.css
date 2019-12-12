@@ -41,7 +41,7 @@ body {
 }
 
 .section-title-underline{
-    width: 90%;
+    width: 277px;
     height: 0px;
     margin: 20px auto;
     border: 1px solid #00dddb;
@@ -1110,6 +1110,10 @@ header {
 
 /* ######## INDIVIDUAL APPROACH ##################### */
 
+.individual-steps-wrapper{
+    padding-bottom: 60px;
+}
+
 
 .individual-title{
     
@@ -1120,9 +1124,9 @@ header {
     
     color: #777777;
     font-size: 1em;
-    background-image: url(../images/individual/lg/individual-bg-lg.png);
+    background-image: url(../images/individual/sm/individual-bg-sm.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top;
     height: auto;
     
 } 
@@ -1135,6 +1139,15 @@ header {
     text-indent: 20px;
     text-align: justify;
     line-height: 26px;
+}
+
+.individual-desc-icon{
+    display: block;
+    width:50px;
+    height:50px;
+    background-image: url("../images/individual/icon.png");
+    background-repeat: no-repeat;
+    background-origin: center;
 }
 
 .individual-steps .row{
@@ -1174,7 +1187,7 @@ header {
     display: block;
     text-align: center;
     margin: 40px auto;
-    font-size: 5em;
+    font-size: 4em;
     color: #00dddb;
 }
 
@@ -1191,6 +1204,20 @@ header {
 }
 
 
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+
+@media (min-width: 767px){
+    .individual-steps-wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/* END RESPONSIVE DESIGN */
 
 
 
