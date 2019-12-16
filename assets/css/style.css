@@ -106,10 +106,6 @@ header {
     padding-right: 0;
 }
 
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
 
 .menuSlWrapper {
     margin-top: 3%;
@@ -1317,6 +1313,40 @@ header {
 
 /* ######## END INDIVIDUAL APPROACH ################# */
 
+
+/* ######## ABOUT ME SECTION ######################## */
+
 .about-me {
-    height: 100%;
+    background-image: url("../images/about/sm/about-sm.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+.about-text{
+    padding:0;
+}
+
+.about-title{
+    margin-bottom: 0;
+}
+
+.about-title-underline {
+    width: 129px;
+    margin-bottom: 20px;
+}
+
+.about-text{
+    width: 90%;
+    margin: 0px auto;
+    padding: 25px 10px 50px 10px;
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 26px;
+    color: #777777;
+}
+
+
+
+/* ######## END ABOUT ME SECTION #################### */
