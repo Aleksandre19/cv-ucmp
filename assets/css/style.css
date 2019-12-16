@@ -1349,4 +1349,29 @@ header {
 
 
 
+/* Responsive design for about section */
+
+@media(min-width: 767px){
+    
+    .about-me{
+        height: 100%;
+        background-image: url("../images/about/md/about-md-bg-image.png");
+        background-size: 75%;
+        background-position: left center;
+        
+        
+    }
+    .about-md-bg{
+        width:100%;
+        height:100%;
+        background-image: url("../images/about/md/about-md-bg.png");
+        background-size: 100%;
+        background-position: left;
+        background-repeat: repeat-y;
+    }
+}
+
+/* END Responsive design for about section */
+
+
 /* ######## END ABOUT ME SECTION #################### */
