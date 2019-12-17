@@ -1117,7 +1117,7 @@ header {
     background-repeat: no-repeat;
     background-position: top right;
     height: auto;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
 
 }
 
@@ -1353,9 +1353,6 @@ header {
 
 /* Responsive design for about section */
 
-
-
-
 @media(min-width: 767px) {
 
     .about-me {
@@ -1387,6 +1384,7 @@ header {
 
     .about-text {
         padding: 10px 0px 50px 0px;
+        margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -1401,23 +1399,25 @@ header {
         transform: translate(-50%, -50%);
     }
 
-    .about-section-title-icon {
+    .about-section-title-icon,
+    .videos-section-title-icon {
         display: block;
         width: 50px;
         height: 50px;
-        transform: translateY(-25px);
+        margin-top: -67px;
+        margin-left: 170px;
         background-image: url("../images/about/about-icon.png");
         background-repeat: no-repeat;
         background-origin: center;
     }
-    
-    .diana-img-container{
+
+    .diana-img-container {
         position: relative;
         overflow: hidden;
     }
-    
-    .diana-img{
-        width:134%;
+
+    .diana-img {
+        width: 134%;
         position: absolute;
         top: 50%;
         left: 76%;
@@ -1427,26 +1427,31 @@ header {
 
 
 
-@media (min-width: 863px){
-    .diana-img{
+@media (min-width: 863px) {
+    .diana-img {
         width: 103%;
     }
 }
 
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     
-    .diana-img-container{
+    .about-wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .diana-img-container {
         overflow: visible;
     }
-    
-     .diana-img{
-        width:86%;
-        top:50%;
+
+    .diana-img {
+        width: 86%;
+        top: 50%;
         left: 60%;
-        
-     }
-    
+
+    }
+
 }
 
 
@@ -1455,29 +1460,31 @@ header {
 
 /* ######## END ABOUT ME SECTION #################### */
 
-
 /* ######## VIDEOS SECTION ########################## */
 
-
-.videos-section{
-    
-    margin-bottom: 50px;
+.videos-section {
+    border: 1px solid transparent;
 }
 
-.videos-wrapper{
+
+.iframe-wrapper{
+    margin-top: 20px;
+}
+.videos-wrapper {
     width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
-.videos-frame{
+.videos-frame {
     width: 100%;
-    height: 315px;
+    height: 30vh;
     border: 5px solid #d9b23d;
     border-radius: 15px;
     margin: 45px 0px 10px 0px;
 }
 
-.video-description{
+.video-description {
     width: 100%;
     margin: 0px auto;
     padding: 15px;
@@ -1488,13 +1495,82 @@ header {
     border-radius: 10px;
 }
 
-.videos-title{
+.videos-title {
     margin-bottom: 0;
 }
 
-.videos-title-underline{
+.videos-title-underline {
+    width: 100px;
     margin-bottom: 20px;
 }
 
+.video-article {
+    padding: 0px 5%;
+}
+
+
+/* Responsive design for tablets */
+
+@media(min-width: 767px) {
+
+
+    .videos-section {
+        padding-bottom: 50px;
+        background-image: url("../images/videos/md/videos-md-bg.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+    }
+
+    .video-article {
+        padding: 0px 4%;
+    }
+
+
+
+    .videos-section-title-icon {
+        background-image: url("../images/videos/videos-icon.png");
+        margin: 0 auto;
+        
+    }
+
+}
+
+
+@media (min-width: 992px) {
+
+    .videos-wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .videos-section {
+        background-image: url("../images/videos/lg/videos-lg-bg.png");
+        background-size: cover;
+        background-position: top;
+    }
+    .videos-section-title-icon {
+        margin-left: 145px;
+        margin-top: -70px;
+    }
+
+    .videos-title {
+        margin-left: 37px;
+    }
+
+    .videos-title-underline {
+        margin-left: 35px;
+    }
+}
+
+@media (min-height: 1366px){
+    .videos-frame{
+        height: 20vh;
+    }
+}
+
+
+/* END Responsive design for tablets */
 
 /* ######## END VIDEOS SECTION ###################### */
