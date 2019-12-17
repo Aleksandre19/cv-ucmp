@@ -1216,25 +1216,25 @@ header {
 /* Desktop */
 
 @media(min-width: 992px) {
-    
-    .all-steps-wrapper{
+
+    .all-steps-wrapper {
         margin-top: 150px;
     }
-    
-    .individual-title{
+
+    .individual-title {
         position: relative;
         max-width: 340px;
         margin-top: 100px;
     }
-    
-    .individual-title:after{
+
+    .individual-title:after {
         content: url("../images/individual/icon.png");
         position: absolute;
         right: 0px;
         top: 0;
     }
-    
-    .individual-section-centerer{
+
+    .individual-section-centerer {
         max-width: 1300px;
         margin: 0 auto;
     }
@@ -1263,27 +1263,27 @@ header {
         position: relative;
     }
 
-    .gathering-bg{
+    .gathering-bg {
         background-image: url("../images/individual/gathering-title-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 142px;
     }
 
-    .separation-bg{
+    .separation-bg {
         background-image: url("../images/individual/separation-title-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 142px;
     }
-    
-    .research-bg{
+
+    .research-bg {
         background-image: url("../images/individual/research-title-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 142px;
     }
-    
+
     .steps-title {
         position: absolute;
         top: -8%;
@@ -1292,27 +1292,28 @@ header {
         width: 100%;
         font-size: 1.6vw;
     }
-    
-    .separation-title{
+
+    .separation-title {
         font-size: 1.5vw;
     }
 
 }
 
-/* Fixing sizes for teps's titles */ 
-@media (min-width: 1300px){
-    .steps-title{
+/* Fixing sizes for teps's titles */
+
+@media (min-width: 1300px) {
+    .steps-title {
         font-size: 1.414em;
     }
 }
-/* END Fixing sizes for teps's titles */ 
+
+/* END Fixing sizes for teps's titles */
 
 /* END Desktop */
 
 /* END RESPONSIVE DESIGN */
 
 /* ######## END INDIVIDUAL APPROACH ################# */
-
 
 /* ######## ABOUT ME SECTION ######################## */
 
@@ -1324,11 +1325,11 @@ header {
     background-size: cover;
 }
 
-.about-text{
-    padding:0;
+.about-text {
+    padding: 0;
 }
 
-.about-title{
+.about-title {
     margin-bottom: 0;
 }
 
@@ -1337,7 +1338,7 @@ header {
     margin-bottom: 20px;
 }
 
-.about-text{
+.about-text {
     width: 90%;
     margin: 0px auto;
     padding: 25px 10px 50px 10px;
@@ -1351,27 +1352,88 @@ header {
 
 /* Responsive design for about section */
 
-@media(min-width: 767px){
-    
-    .about-me{
+
+
+
+@media(min-width: 767px) {
+
+    .about-me {
+        position: relative;
         height: 100%;
         background-image: url("../images/about/md/about-md-bg-image.png");
         background-size: 75%;
         background-position: left center;
-        
-        
+
+
     }
-    .about-md-bg{
-        width:100%;
-        height:100%;
+    .about-md-bg {
+        width: 100%;
+        height: 100%;
         background-image: url("../images/about/md/about-md-bg.png");
         background-size: 100%;
         background-position: left;
         background-repeat: repeat-y;
     }
+
+    .about-title {
+        text-align: left;
+    }
+
+
+    .about-title-underline {
+        margin: 20px;
+    }
+
+    .about-text {
+        padding: 10px 0px 50px 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .about-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .about-section-title-icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translateY(-25px);
+        background-image: url("../images/about/about-icon.png");
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+    
+    .diana-img-container{
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .diana-img{
+        width:134%;
+        position: absolute;
+        top: 50%;
+        left: 76%;
+        transform: translate(-50%, -50%);
+    }
 }
 
-/* END Responsive design for about section */
 
+
+@media (min-width: 1024px){
+    
+     .diana-img{
+        width:85%;
+        left: 60%;
+     }
+    
+}
+/* END Responsive design for about section */
 
 /* ######## END ABOUT ME SECTION #################### */
