@@ -1117,6 +1117,7 @@ header {
     background-repeat: no-repeat;
     background-position: top right;
     height: auto;
+    margin-bottom: 100px;
 
 }
 
@@ -1426,14 +1427,30 @@ header {
 
 
 
-@media (min-width: 1024px){
+@media (min-width: 863px){
+    .diana-img{
+        width: 103%;
+    }
+}
+
+
+@media (min-width: 992px){
+    
+    .diana-img-container{
+        overflow: visible;
+    }
     
      .diana-img{
-        width:85%;
+        width:86%;
+        top:50%;
         left: 60%;
+        
      }
     
 }
+
+
+
 /* END Responsive design for about section */
 
 /* ######## END ABOUT ME SECTION #################### */
