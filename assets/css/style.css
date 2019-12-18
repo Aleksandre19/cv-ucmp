@@ -1324,6 +1324,7 @@ header {
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
+   
 }
 
 .about-text {
@@ -1435,8 +1436,8 @@ header {
 
 
 @media (min-width: 992px) {
-    
-    .about-wrapper{
+
+    .about-wrapper {
         max-width: 1300px;
         margin: 0 auto;
     }
@@ -1464,12 +1465,14 @@ header {
 
 .videos-section {
     border: 1px solid transparent;
+  
 }
 
 
-.iframe-wrapper{
+.iframe-wrapper {
     margin-top: 20px;
 }
+
 .videos-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -1531,7 +1534,7 @@ header {
     .videos-section-title-icon {
         background-image: url("../images/videos/videos-icon.png");
         margin: 0 auto;
-        
+
     }
 
 }
@@ -1539,7 +1542,7 @@ header {
 
 @media (min-width: 992px) {
 
-    .videos-wrapper{
+    .videos-wrapper {
         max-width: 1300px;
         margin: 0 auto;
         margin-bottom: 100px;
@@ -1564,8 +1567,8 @@ header {
     }
 }
 
-@media (min-height: 1366px){
-    .videos-frame{
+@media (min-height: 1366px) {
+    .videos-frame {
         height: 20vh;
     }
 }
@@ -1575,36 +1578,39 @@ header {
 
 /* ######## END VIDEOS SECTION ###################### */
 
-
-
-
 /* ######## FEEDBACK SECTION ######################## */
 
-.feedback-section{
+.feedback-section {
     padding-bottom: 100px;
     background-image: url("../images/feedbacks/sm/feedback-sm-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
+    border-top: 10px solid #d9b23d;
 }
 
 
-.feedback-title{
+.feedback-title {
     padding-top: 70px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
-.feedback-title-underline{
+.feedback-title-underline {
     width: 145px;
     margin-bottom: 110px;
 }
 
-.feedback-container{
+
+.quote-wrapper{
     position: relative;
+}
+
+.feedback-container {
     width: 90%;
     margin: 20px auto;
-    margin-top: 75px;
+    margin-top: 70px;
     background-color: #fff;
     border-radius: 7px;
     box-shadow: 1px 1px 5px 2px #d6d6d6;
@@ -1613,14 +1619,14 @@ header {
     -o-box-shadow: 1px 1px 5px 2px #d6d6d6;
 }
 
-.feedback-text{
-    padding: 60px 7% 0% 6%;
+.feedback-text {
+    padding: 60px 22px 13px 22px;
     text-align: center;
     line-height: 22px;
     color: #777777;
 }
 
-.feedback-img{
+.feedback-img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -1635,24 +1641,120 @@ header {
     -webkit-box-shadow: 1px 1px 5px 2px #d6d6d6;
     -moz-box-shadow: 1px 1px 5px 2px #d6d6d6;
     -o-box-shadow: 1px 1px 5px 2px #d6d6d6;
-  
+
 }
 
-.feedback1{
-     background-image: url("../images/feedbacks/avatar/avatar1.jpg");
+.feedback1 {
+    background-image: url("../images/feedbacks/avatar/avatar1.jpg");
 }
 
-.feedback2{
-     background-image: url("../images/feedbacks/avatar/avatar2.jpg");
+.feedback2 {
+    background-image: url("../images/feedbacks/avatar/avatar2.jpg");
 }
 
-.feedback3{
-     background-image: url("../images/feedbacks/avatar/avatar3.jpg");
+.feedback3 {
+    background-image: url("../images/feedbacks/avatar/avatar3.jpg");
 }
 
-.feedback4{
-     background-image: url("../images/feedbacks/avatar/avatar4.jpg");
+.feedback4 {
+    background-image: url("../images/feedbacks/avatar/avatar4.jpg");
 }
 
+
+.feedback-user-img-container {
+    width: 85%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
+.feedback-user-img {
+    width: 100%;
+    height: 25%;
+
+}
+
+
+
+/* Responsive design for feedback's section */
+
+@media (min-width: 767px) {
+    
+    .feedback-section {
+        background-image: url("../images/feedbacks/md/feedback-md-bg.jpg");
+    }
+    
+    .all-quote-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        margin-right: 2%;
+    }
+
+    .feedback-title-underline{
+        margin-bottom: 65px;
+    }   
+   
+    .feedback-text {
+        padding: 20px 22px 5px 22px;
+    }
+
+    .feedback-container {
+        width:100%;
+        min-height: 86px;
+        margin: 0;
+    }
+
+    .quote-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0px 20px 80px;
+        border-left: 2px solid #d9b23d;
+    }
+    
+    .img1{
+        padding-top: 0;
+    }
+    
+    .img4{
+        padding-bottom: 0;
+    }
+    
+    .feedback-img{
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+    }
+    
+    .feedback1{
+        margin-top: 0;
+    }
+    
+    
+}
+
+
+@media(min-width: 992px){
+    .feedback-title{
+        margin-left: 100px;
+    }
+    
+    .feedback-title-underline{
+        margin-left: 100px;
+        margin-bottom: 70px
+    }
+    
+    .feedback-wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+
+@media(min-width: 1024px){
+    .feedback-section {
+        background-image: url("../images/feedbacks/lg/feedback-lg-bg.jpg");
+    }
+}
+/* END Responsive design for feedback's section*/
 
 /* ######## END FEEDBACK SECTION #################### */
