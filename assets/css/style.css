@@ -1812,3 +1812,73 @@ header {
 /* END Responsive design for feedback's section*/
 
 /* ######## END FEEDBACK SECTION #################### */
+
+
+/* ######## REGISTRATION SECTION #################### */
+
+.register-section{
+    height: 100%;
+    padding-top: 28%;
+    background-image: url("../images/registration/register-sm-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+    
+}
+
+.register-container{
+    width:90%;
+    margin: 0 auto;
+}
+
+.register-title{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #595959;
+    font-weight: 300;
+    line-height: 56px;
+    font-size: 2em;
+}
+
+.register-text{
+    color: #595959;
+    font-size: 1em;
+    text-align: center;
+    padding:10px;
+}
+
+.register-form{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.register-inputs{
+    display: block;
+    padding: 4%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.8em;
+    font-style: italic;
+    border: 1px solid #d6d4d4;
+}
+
+.register-inputs::placeholder{
+    color: #d6d4d4;
+}
+
+#submit{
+    border: 1px solid #04d9d9;
+    background-color: #04d9d9;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    font-style: normal;
+}
+
+/* ######## END REGISTRATION SECTION #################### */
