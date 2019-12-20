@@ -1981,8 +1981,60 @@ header {
     width: 100%;
     min-height: 200px;
     background-color: #d95304;
+    border: 1px solid transparent;
 }
 
+.footer-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-container ul{
+    width: 90%;
+    margin: 10px auto;
+    border-top: 1px solid #ffa500a6;
+    padding: 10px 0px 10px 0px;
+}
+
+.footer-container ul li{
+    list-style: none;
+    display: block;
+    padding: 5px;
+}
+
+
+.footer-container ul li a, h4{
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.footer-container ul li a:hover{
+    text-decoration: underline;
+}
+
+
+.footer-sl-i{
+    font-size: 1.5em;
+}
+
+.footer-container h4{
+    text-align: center;
+    padding-bottom: 5%;
+    color: #ffc557;
+    font-size: 0.8em;
+    padding-top: 3%;
+}
+
+.footer-container ul.footer-section-links{
+   border-top: none;
+}
+
+.footer-sl{
+    border-bottom: 1px solid #ffa500a6;
+}
 
 /* ###################### END FOTTER #################### */
 
