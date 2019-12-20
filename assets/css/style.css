@@ -1881,4 +1881,24 @@ header {
     font-style: normal;
 }
 
+
+/* Responsive design for registration's section */
+
+@media (min-width: 767px){
+    .register-inputs{
+        min-width: 600px;
+        width: 600px;
+        margin: 20px auto;
+    }
+    
+    .register-text{
+        
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+}
+/* END Responsive design for registration's section */
+
+
+
 /* ######## END REGISTRATION SECTION #################### */
