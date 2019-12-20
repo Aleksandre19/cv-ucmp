@@ -1939,7 +1939,7 @@ header {
         margin: 0 auto;
     }
 
-    .first-bg-img{
+    .first-bg-img {
         width: 11%;
         height: 100%;
         position: absolute;
@@ -1951,7 +1951,7 @@ header {
         background-position: top;
         background-size: 100%;
     }
-    
+
     .second-bg-img {
         width: 19%;
         height: 100%;
@@ -1964,7 +1964,7 @@ header {
         background-position: top;
         background-size: 100%;
     }
-    
+
 
 
 }
@@ -1973,68 +1973,117 @@ header {
 
 /* ######## END REGISTRATION SECTION #################### */
 
-
-
 /* ################# FOTTER ############################# */
 
-.footer{
+.footer {
     width: 100%;
     min-height: 200px;
     background-color: #d95304;
     border: 1px solid transparent;
 }
 
-.footer-container{
+.footer-container {
     width: 90%;
     margin: 0 auto;
 }
 
-.footer-container ul{
+.footer-container ul {
     width: 90%;
     margin: 10px auto;
     border-top: 1px solid #ffa500a6;
     padding: 10px 0px 10px 0px;
 }
 
-.footer-container ul li{
+.footer-container ul li {
     list-style: none;
     display: block;
     padding: 5px;
+    text-align: center;
 }
 
 
-.footer-container ul li a, h4{
+.footer-container ul li a,
+h4 {
     text-decoration: none;
     font-size: 1em;
     color: #fff;
     text-transform: capitalize;
     letter-spacing: 2px;
-}
-
-.footer-container ul li a:hover{
-    text-decoration: underline;
+    transition: color 0.25s ease-in-out;
 }
 
 
-.footer-sl-i{
+
+.footer-container ul li a:hover {
+    color: #f5aa22;
+}
+
+
+.footer-sl-i {
     font-size: 1.5em;
+    margin: 0px 5px;
+
 }
 
-.footer-container h4{
+.footer-sm-sl {
     text-align: center;
-    padding-bottom: 5%;
+}
+
+
+
+.footer-container h4 {
+    text-align: center;
+    padding-bottom: 20px;
     color: #ffc557;
     font-size: 0.8em;
-    padding-top: 3%;
+    padding-top: 15px;
 }
 
-.footer-container ul.footer-section-links{
-   border-top: none;
+.footer-container ul.footer-section-links {
+    border-top: none;
 }
 
-.footer-sl{
+.footer-sl {
     border-bottom: 1px solid #ffa500a6;
+
 }
+
+
+/* Responsive design for footers */
+
+@media (min-width: 767px) {
+    .footer-sl {
+        border-bottom: none;
+    }
+
+    .footer-container ul {
+        border-top: none;
+    }
+
+
+    .footer-container ul li {
+        text-align: left;
+    }
+
+    .footer-middle-column {
+        text-align: center;
+    }
+  
+
+}
+
+@media(min-width: 992px) {
+
+    .footer-container {
+        width: 80%;
+    }
+
+    .footer-wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+/* END Responsive design for footer */
 
 /* ###################### END FOTTER #################### */
-
