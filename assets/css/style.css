@@ -1582,6 +1582,7 @@ header {
 /* ######## FEEDBACK SECTION ######################## */
 
 .feedback-section {
+    height: auto;
     padding-top: 15px;
     padding-bottom: 60px;
     background-image: url("../images/feedbacks/sm/feedback-sm-bg.jpg");
@@ -1796,8 +1797,8 @@ header {
         max-width: 1300px;
         margin: 0 auto;
     }
-    
-    .all-quote-wrapper{
+
+    .all-quote-wrapper {
         padding-top: 40px;
     }
 }
@@ -1813,26 +1814,29 @@ header {
 
 /* ######## END FEEDBACK SECTION #################### */
 
-
 /* ######## REGISTRATION SECTION #################### */
 
-.register-section{
+.register-section {
     height: 100%;
-    padding-top: 28%;
     background-image: url("../images/registration/register-sm-bg.png");
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
     background-size: contain;
-    
+    position: relative;
+
 }
 
-.register-container{
-    width:90%;
-    margin: 0 auto;
+.register-container {
+    z-index: 2;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.register-title{
+.register-title {
     width: 85%;
     margin: 0 auto;
     margin-bottom: 3%;
@@ -1843,20 +1847,21 @@ header {
     font-size: 2em;
 }
 
-.register-text{
+.register-text {
     color: #595959;
     font-size: 1em;
     text-align: center;
-    padding:10px;
+    padding: 10px;
+    font-weight: 200;
 }
 
-.register-form{
+.register-form {
     width: 90%;
     margin: 0 auto;
     margin-top: 1%;
 }
 
-.register-inputs{
+.register-inputs {
     display: block;
     padding: 4%;
     width: 100%;
@@ -1867,11 +1872,11 @@ header {
     border: 1px solid #d6d4d4;
 }
 
-.register-inputs::placeholder{
+.register-inputs::placeholder {
     color: #d6d4d4;
 }
 
-#submit{
+#submit {
     border: 1px solid #04d9d9;
     background-color: #04d9d9;
     text-transform: uppercase;
@@ -1884,21 +1889,86 @@ header {
 
 /* Responsive design for registration's section */
 
-@media (min-width: 767px){
-    .register-inputs{
-        min-width: 600px;
-        width: 600px;
+@media (min-width: 576px) {}
+
+@media (min-width: 767px) {
+    .register-container {
+        max-width: 600px;
+    }
+    .register-inputs {
         margin: 20px auto;
     }
-    
-    .register-text{
-        
-        margin-top: 4em;
-        margin-bottom: 4em;
+
+    .register-title {
+        font-size: 3em;
+    }
+
+    .register-text {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.2em;
+
+    }
+
+    .register-inputs {
+        height: 80px;
     }
 }
+
+
+@media(min-width: 992px) {
+
+    .register-section {
+        background-image: none;
+    }
+
+    .register-section {
+        padding-top: 10%;
+    }
+
+
+
+    .register-text {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.2em;
+    }
+
+    .register-wrapper {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .first-bg-img{
+        width: 11%;
+        height: 100%;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: 1;
+        background-image: url("../images/registration/lg/register-lg-left-bg-img.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+    
+    .second-bg-img {
+        width: 19%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 55%;
+        z-index: 1;
+        background-image: url("../images/registration/lg/register-lg-right-bg-img.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+    
+
+
+}
+
 /* END Responsive design for registration's section */
-
-
 
 /* ######## END REGISTRATION SECTION #################### */
