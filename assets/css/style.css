@@ -41,7 +41,6 @@ body {
      background: url('../images/loading.gif') 50% 50% no-repeat rgb(246,246,246);
 }
 
-
 .sections {
     width: 100%;
     height: 100%;
@@ -50,7 +49,6 @@ body {
     z-index: 0;
     padding: 0;
 }
-
 
 .section-title {
     font-family: Monolith;
@@ -75,9 +73,6 @@ body {
     font-family: Monolith;
     src: url(../fonts/monolith-regular.otf);
 }
-
-
-
 
 
 
@@ -107,7 +102,6 @@ header {
     line-height: 45px;
 }
 
-
 .navbar {
     /* Overwriting bootstrap's styling */
     padding-top: 6%;
@@ -128,13 +122,9 @@ header {
     padding-right: 0;
 }
 
-
 .menuSlWrapper {
     margin-top: 3%;
 }
-
-
-
 
 /* Burger menu */
 
@@ -206,16 +196,12 @@ header {
 
 /* END Social Links */
 
-/* #################### END HEADER ################## */
-
-                        /* * */
-
-/* #################### SLIDESHOW SECTION ########### */
+/* Slideshow */
 
 /* Slider */
 
 
-.slideshow { /* Styling animation area an setting animation's first image */
+.slideshow { /* Styling animation area and setting animation's first image */
     height: 100%;
     background: url("../images/food-sm.jpg");
     background-repeat: no-repeat;
@@ -360,7 +346,6 @@ header {
     top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 #free-consultation-text h1 {
@@ -408,7 +393,6 @@ header {
     -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
 }
 
 
@@ -421,8 +405,6 @@ header {
     background-color: #d95304;
     border: 1px solid #d95304;
     color: #fff;
-
-
 }
 
 .btn-signUp {
@@ -479,7 +461,6 @@ header {
     -webkit-animation: text-anime 2s ease forwards 0.3s;
     -moz-animation: text-anime 2s ease forwards 0.3s;
     -o-animation: text-anime 2s ease forwards 0.3s;
-
 }
 
 #logo path:nth-child(3) {
@@ -500,7 +481,6 @@ header {
     -webkit-animation: text-anime 2s ease forwards 0.9s;
     -moz-animation: text-anime 2s ease forwards 0.9s;
     -o-animation: text-anime 2s ease forwards 0.9s;
-
 }
 
 #logo path:nth-child(5) {
@@ -511,7 +491,6 @@ header {
     -webkit-animation: text-anime 2s ease forwards 1.2s;
     -moz-animation: text-anime 2s ease forwards 1.2s;
     -o-animation: text-anime 2s ease forwards 1.2s;
-
 }
 
 #logo path:nth-child(6) {
@@ -522,7 +501,6 @@ header {
     -webkit-animation: text-anime 2s ease forwards 1.5s;
     -moz-animation: text-anime 2s ease forwards 1.5s;
     -o-animation: text-anime 2s ease forwards 1.5s;
-
 }
 
 #logo path:nth-child(7) {
@@ -663,11 +641,9 @@ header {
     /* Diana's text - opacity's keyframe */
     from {
         opacity: 0;
-
     }
     to {
         opacity: 1;
-
     }
 }
 
@@ -681,7 +657,6 @@ header {
     to {
         opacity: 1;
         bottom: 0;
-
     }
 }
 
@@ -694,7 +669,6 @@ header {
 .modal-dialog {
     /* Setting height to modal box */
     height: 100%;
-
 }
 
 .modal-content {
@@ -710,7 +684,6 @@ header {
 .modal-header {
     padding: 0;
 }
-
 
 .modal-header .close {
     position: absolute;
@@ -736,8 +709,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 .modal-header h3 {
     text-align: center;
     font-size: 1.4em;
@@ -745,9 +716,7 @@ header {
     line-height: 35px;
     font-weight: 200;
     padding: 15px 20px;
-
 }
-
 
 .btn-moddal-wrapper {
     /* Centering modal button */
@@ -755,7 +724,6 @@ header {
 }
 
 /* END Sign Up modal */
-
 
 /* Responsive design for header section */
 
@@ -770,8 +738,6 @@ header {
 }
 
 /* END Styling for divacies less than 320px */
-
-/* * */
 
 /* Responsive typography scale for mobile and tablet */
 
@@ -801,12 +767,9 @@ header {
     }
 
     .modal-content {
-
         padding: 5% 0%;
         width: 90%;
-
     }
-
 }
 
 /* END Responsive typography scale for mobile and tablet */
@@ -827,8 +790,6 @@ header {
         padding-right: 20px;
         animation: btn-signUp-overTurned 1s ease forwards 4s;
     }
-
-
 }
 
 @keyframes btn-signUp-overTurned {
@@ -840,7 +801,6 @@ header {
     to {
         opacity: 1;
         bottom: -8%;
-
     }
 }
 
@@ -891,8 +851,6 @@ header {
 
     /* END Styling animation's text for tablets */
 }
-
-
 /* Slideshow for tablets */
 
 @keyframes slideshow-w-md {
@@ -1001,7 +959,6 @@ header {
 /* Styling animation's text for table pro */
 
 @media (min-width: 1024px) {
-
     .text-container {
         height: 50%;
     }
@@ -1018,7 +975,6 @@ header {
 /* Slideshow */
 
 @media (min-width: 992px) {
-
     .slideshow {
         height: 100%;
         background: url("../images/food-lg.jpg");
@@ -1035,7 +991,6 @@ header {
     .text-container {
         height: 67%;
     }
-
     .btn-signUp {
         animation: btn-signUp-lg 1s ease forwards 4s;
     }
@@ -1043,8 +998,6 @@ header {
     .navbar-nav {
         width: 650px;
     }
-
-
 }
 
 
@@ -1057,7 +1010,6 @@ header {
     to {
         opacity: 1;
         bottom: 8%;
-
     }
 }
 
@@ -1144,7 +1096,10 @@ header {
 
 /* END Responsive design for header section */
 
-/* ################ END HEADER SECTION ########### */
+/* END Slideshow */
+
+/* #################### END HEADER ################## */
+
 
 
                     /* * */
