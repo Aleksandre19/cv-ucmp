@@ -23,6 +23,7 @@ body {
     background-color: #f6f6f6;
     font-size: 1em;
     font-family: "Open Sans";
+    position: relative;
 }
 
 /* Loading icon*/
@@ -708,6 +709,7 @@ header {
 }
 
 .modal-header h3 {
+    font-family: Monolith;
     text-align: center;
     font-size: 1.4em;
     letter-spacing: 0.5px;
@@ -1895,7 +1897,7 @@ header {
 }
 
 .register-title {
-    width: 85%;
+    font-family: Monolith;
     margin: 0 auto;
     margin-bottom: 3%;
     text-align: center;
@@ -1906,7 +1908,8 @@ header {
 }
 
 .register-text {
-    color: #595959;
+    font-family: Monolith;
+    color: #797979;
     font-size: 1em;
     text-align: center;
     padding: 10px;
@@ -1957,14 +1960,12 @@ header {
     }
 
     .register-title {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .register-text {
         margin-top: 2em;
         margin-bottom: 2em;
-        font-size: 1.2em;
-
     }
 
     .register-inputs {
@@ -2174,4 +2175,21 @@ h4 {
     .about-me{
         height: auto;
     }
+}
+
+/* Overwriting bootstrap's .active */
+.navbar-light .navbar-nav .nav-link.active{
+    border-bottom: 1px solid #00dddb;
+    padding-bottom: 0px;
+    color: #00dddb;
+}
+
+/* Overwriting bootstraps's menu links styles */
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(250,250,250,1);
+}
+
+/* Overwriting bootstrap's menu link's hover */
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #00dddb;
 }

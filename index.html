@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Document</title>
     <!--  Jquery script for loading button -->
     <script type="text/javascript">
@@ -19,7 +20,7 @@
     </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Loading icon -->
     <div class="loader"></div>
     <!-- Whole page wrapper -->
@@ -35,12 +36,12 @@
                         <button class="navbar-toggler purple darken-3" type="button" data-toggle="collapse" data-target="#mainMenuDropdown" aria-controls="mainMenuDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                        <div class="collapse navbar-collapse" id="mainMenuDropdown">
+                        <div class="collapse navbar-collapse dd" id="mainMenuDropdown">
                             <ul class="navbar-nav mr-auto  ">
-                                <li class="navbar-item"><a href="#home-page" class="hvr-float ">home</a></li>
-                                <li class="navbar-item"><a href="#about-page" class="hvr-float">about me</a></li>
-                                <li class="navbar-item"><a href="#videos-page" class="hvr-float">videos</a></li>
-                                <li class="navbar-item"><a href="#register-page" class="hvr-float">consultation</a></li>
+                                <li class="nav-item navbar-item"><a href="#home-page" class="nav-link active hvr-float">home</a></li>
+                                <li class="nav-item navbar-item"><a href="#about-page" class="nav-link hvr-float">about me</a></li>
+                                <li class="nav-item navbar-item"><a href="#videos-page" class="nav-link hvr-float">videos</a></li>
+                                <li class="nav-item navbar-item"><a href="#register-page" class="nav-link hvr-float">consultation</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -60,7 +61,7 @@
         </header>
         <!-- /HEADER -->
         <!-- Slideshow's container -->
-        <section class="container-fluid sections ">
+        <section class="container-fluid sections " id="home-page">
             <!-- Here goes background slideshow's images -->
             <div class="container-fluid slideshow">
                 <!-- Here goes texts of animations -->
@@ -127,7 +128,7 @@
         <!--  /Individual section linker -->
 
         <!-- Individual approach section-->
-        <section class="sections individual-section">
+        <section class="sections individual-section" >
             <!-- Individual section's wrapper -->
             <div class="container-fluid individual-section-wrapper">
                 <!-- Centering all section above 1300px screen resolution -->
@@ -217,15 +218,10 @@
             <!-- /Individual section's wrapper -->
         </section>
         <!-- /Individual approach section-->
-
-
-        <!--  About section linker -->
-        <a id="about-page"></a>
-        <!--  /About section linker -->
-
+        
 
         <!-- About Me section-->
-        <section class="sections about-me">
+        <section class="sections about-me" id="about-page">
             <!-- Div for background image of medium devices -->
             <div class="about-md-bg">
                 <!-- About section container -->
@@ -266,13 +262,10 @@
             <!-- /Div for background image of medium devices -->
         </section>
         <!-- /About Me section-->
-
-        <!--  Videos section linker -->
-        <a id="videos-page"></a>
-        <!-- /Videos section linker -->
+        
 
         <!-- Video's section -->
-        <section class="section videos-section">
+        <section class="section videos-section" id="videos-page">
             <!-- Video's section wrapper -->
             <div class="videos-wrapper">
                 <!-- Video's section title -->
@@ -436,12 +429,9 @@
         </section>
         <!-- /Feedbacks section-->
 
-        <!--  Consultation section linker -->
-        <a id="register-page"></a>
-        <!--  /Consultation section linker -->
 
         <!-- Consultation's section-->
-        <section class="sections register-section">
+        <section class="sections register-section" id="register-page">
             <!-- Left and right background images -->
             <div class="first-bg-img">
                 <!-- Here goes left top background image -->
@@ -504,6 +494,8 @@
                                     <li><a href="#about-page">About Me</a></li>
                                     <li><a href="#videos-page">Videos</a></li>
                                     <li><a href="#register-page">Consultation</a></li>
+                                    <li><a href="#individual-page">Individual Approach</a></li>
+                                    <li><a href="#feedbacks-page">Feedbacks</a></li>
                                 </ul>
                                 <!-- /Footer menu's links -->
                             </div>
@@ -626,8 +618,10 @@
     </script>
     <!-- /scrollSpy delay function  -->
     <!-- Bootstrap's javascript links-->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    -->
     <!-- /Bootstrap's javascript links-->
 </body>
 
