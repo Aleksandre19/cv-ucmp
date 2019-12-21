@@ -2165,8 +2165,18 @@ h4 {
 /* ###################### END FOTTER #################### */
 
 
+
+/* Fixing background blur problem for small devices */
 @media (max-width: 992px) {
     .register-section, .feedback-section, .about-me, .slideshow {
         background-attachment: scroll;
+    }
+}
+
+
+/* Fixing Abouit Me section's hight problem in mobiles*/
+@media(max-width: 567px){
+    .about-me{
+        height: auto;
     }
 }
