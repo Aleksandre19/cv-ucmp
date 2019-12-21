@@ -1336,12 +1336,6 @@ header {
 
 }
 
-@media (max-width: 992px) {
-    .about-me{
-        background-attachment: scroll;
-    }
-}
-
 .about-text {
     padding: 0;
 }
@@ -2171,3 +2165,8 @@ h4 {
 /* ###################### END FOTTER #################### */
 
 
+@media (max-width: 992px) {
+    .register-section, .feedback-section, .about-me, .slideshow {
+        background-attachment: scroll;
+    }
+}
