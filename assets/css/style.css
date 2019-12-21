@@ -27,6 +27,17 @@ body {
 }
 
 
+.loader 
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background: url('../images/loading.gif') 50% 50% no-repeat rgb(246,246,246);
+}
+
 
 .sections {
     width: 100%;
@@ -2105,3 +2116,7 @@ h4 {
 /* END Responsive design for footer */
 
 /* ###################### END FOTTER #################### */
+
+
+/* Loading icon */
+
