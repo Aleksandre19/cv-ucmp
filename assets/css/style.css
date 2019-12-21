@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Courgette|Oswald:400');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Courgette|Oswald:400|Open+Sans');
 
+
+html{
+    scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -7,12 +11,13 @@ body {
     height: 100%;
 }
 
-
+/* Wrappes all page*/
 #all-page-wrapper{
     position: relative;
     height: 100%;
-    overflow: scroll;
 }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,22 +25,20 @@ body {
 }
 
 body {
-    height: 100%;
     background-color: #f6f6f6;
     font-size: 1em;
-    /* I use 1.414 (Augumental forth) ratio for font scale */
+    font-family: "Open Sans";
 }
 
-
-.loader 
-{
- position: fixed;
- left: 0px;
- top: 0px;
- width: 100%;
- height: 100%;
- z-index: 9999;
- background: url('../images/loading.gif') 50% 50% no-repeat rgb(246,246,246);
+/* Loading icon*/
+.loader{
+     position: fixed;
+     left: 0px;
+     top: 0px;
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+     background: url('../images/loading.gif') 50% 50% no-repeat rgb(246,246,246);
 }
 
 
@@ -67,7 +70,7 @@ body {
     border: 1px solid #00dddb;
 }
 
-
+/* Installing Monolith font */
 @font-face {
     font-family: Monolith;
     src: url(../fonts/monolith-regular.otf);
@@ -83,7 +86,6 @@ body {
 header {
     width: 100%;
     min-height: 100px;
-    /*height: 130px;*/
     background-color: rgba(0, 0, 0, 0.35);
     position: fixed;
     z-index: 1;
@@ -98,6 +100,7 @@ header {
     line-height: 70px;
 }
 
+/* Align menu links and social links on one line*/
 .navbar-light,
 .navbar-toggler,
 .social-links .row {
@@ -147,33 +150,22 @@ header {
 
 }
 
-
-
 /* END Burger menu */
 
 .main-menu {
-    /* Marging menu from left */
-    /*margin-left: 2%;*/
     padding: 0;
-
-
-
 }
-
-
 
 
 .main-menu li {
     list-style: none;
     line-height: 50px;
     margin-left: 0px;
-
-    /* display: inline; */
-    /* margin-left: 25px; */
 }
 
-.main-menu li a {
 
+/* Setting font famnily to menu links */
+.main-menu li a {
     font-family: "Poiret One";
     font-size: 1em;
     text-transform: uppercase;
@@ -185,29 +177,13 @@ header {
     -o-transition: all 0.35s ease-in-out;
 }
 
-
-
+/* Hover on menu links */
 .main-menu li a:hover {
     text-decoration: none;
     color: #00dddb;
 }
 
 /* END Main Menu */
-
-/* Social Links */
-
-/* .social-links a {
-    text-decoration: none;
-    font-size: 1.414em;
-    color: rgba(0, 0, 0, .25);
-    margin: 0px 5px;
-    transition: color 0.35s ease-in-out;
-    -webkit-transition: color 0.35s ease-in-out;
-    -moz-transition: color 0.35s ease-in-out;
-    -o-transition: color 0.35s ease-in-out;
-
-} */
-
 .social-links a i {
     font-size: 1.6em;
     color: #00dddb;
@@ -228,23 +204,18 @@ header {
     right: 16%;
 }
 
-
-/* .social-links a:hover {
-    color: rgba(0, 219, 221, 1);
-}
-*/
-
 /* END Social Links */
 
 /* #################### END HEADER ################## */
 
-/* * */
+                        /* * */
 
 /* #################### SLIDESHOW SECTION ########### */
 
 /* Slider */
 
-.slideshow {
+
+.slideshow { /* Styling animation area an setting animation's first image */
     height: 100%;
     background: url("../images/food-sm.jpg");
     background-repeat: no-repeat;
@@ -258,7 +229,7 @@ header {
 }
 
 
-
+/* Animation's slids transitions */
 @keyframes slideshow-w {
 
     /* Animation slide transition number 1 */
@@ -337,10 +308,11 @@ header {
 
 }
 
+/* END Animation's slids transitions */
 
 /* END Slider */
 
-/* Background slideshow's text */
+/* Slideshow's background text */
 
 .text-container {
     /* All text's container */
@@ -351,12 +323,18 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 
 #logo {
     /* SVG file's fill in animation*/
     animation: fill-anime 2s ease forwards 3.6s;
+    -webkit-animation: fill-anime 2s ease forwards 3.6s;
+    -moz-animation: fill-anime 2s ease forwards 3.6s;
+    -o-animation: fill-anime 2s ease forwards 3.6s;
 }
 
 
@@ -368,12 +346,15 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: wh-move-top 1s ease forwards 4s;
+    -webkit-animation: wh-move-top 1s ease forwards 4s;
+    -moz-animation: wh-move-top 1s ease forwards 4s;
+    -o-animation: wh-move-top 1s ease forwards 4s;
 }
 
 
 
 #free-consultation-text {
-    /* Contulations's text positioning */
+    /* Consultations's text positioning */
     width: 100%;
     position: absolute;
     top: 43%;
@@ -387,9 +368,15 @@ header {
     font-family: Monolith;
     font-size: 1.3em;
     opacity: 0;
-    animation: consultation 2s ease forwards 4s;
     color: #00dddb;
+    animation: consultation 2s ease forwards 4s;
+    -webkit-animation: consultation 2s ease forwards 4s;
+    -moz-animation: consultation 2s ease forwards 4s;
+    -o-animation: consultation 2s ease forwards 4s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -401,6 +388,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     animation: diana-move-bottom 2s ease forwards 4s;
+    -webkit-animation: diana-move-bottom 2s ease forwards 4s;
+    -moz-animation: diana-move-bottom 2s ease forwards 4s;
+    -o-animation: diana-move-bottom 2s ease forwards 4s;
 }
 
 #diana h2 {
@@ -411,8 +401,13 @@ header {
     color: #fff;
     opacity: 0;
     animation: diana-opacity 2s ease forwards 4s;
+    -webkit-animation: diana-opacity 2s ease forwards 4s;
+    -moz-animation: diana-opacity 2s ease forwards 4s;
+    -o-animation: diana-opacity 2s ease forwards 4s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    ;
+    -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -438,6 +433,9 @@ header {
     opacity: 0;
     transform: translate(-50%, -50%);
     animation: btn-signUp 1s ease forwards 4s;
+    -webkit-animation: btn-signUp 1s ease forwards 4s;
+    -moz-animation: btn-signUp 1s ease forwards 4s;
+    -o-animation: btn-signUp 1s ease forwards 4s;
 }
 
 /*ATANTION after click blue border is apearign which needs to be checked*/
@@ -478,6 +476,9 @@ header {
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 0.3s;
+    -webkit-animation: text-anime 2s ease forwards 0.3s;
+    -moz-animation: text-anime 2s ease forwards 0.3s;
+    -o-animation: text-anime 2s ease forwards 0.3s;
 
 }
 
@@ -486,7 +487,9 @@ header {
     stroke-dasharray: 185.07px;
     stroke-dashoffset: 185.07px;
     animation: text-anime 2s ease forwards 0.6s;
-
+    -webkit-animation: text-anime 2s ease forwards 0.6s;
+    -moz-animation: text-anime 2s ease forwards 0.6s;
+    -o-animation: text-anime 2s ease forwards 0.6s;
 }
 
 #logo path:nth-child(4) {
@@ -494,6 +497,9 @@ header {
     stroke-dasharray: 453.67px;
     stroke-dashoffset: 453.67px;
     animation: text-anime 2s ease forwards 0.9s;
+    -webkit-animation: text-anime 2s ease forwards 0.9s;
+    -moz-animation: text-anime 2s ease forwards 0.9s;
+    -o-animation: text-anime 2s ease forwards 0.9s;
 
 }
 
@@ -502,6 +508,9 @@ header {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 1.2s;
+    -webkit-animation: text-anime 2s ease forwards 1.2s;
+    -moz-animation: text-anime 2s ease forwards 1.2s;
+    -o-animation: text-anime 2s ease forwards 1.2s;
 
 }
 
@@ -510,6 +519,9 @@ header {
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 1.5s;
+    -webkit-animation: text-anime 2s ease forwards 1.5s;
+    -moz-animation: text-anime 2s ease forwards 1.5s;
+    -o-animation: text-anime 2s ease forwards 1.5s;
 
 }
 
@@ -518,6 +530,9 @@ header {
     stroke-dasharray: 482.84px;
     stroke-dashoffset: 482.84px;
     animation: text-anime 2s ease forwards 1.8s;
+    -webkit-animation: text-anime 2s ease forwards 1.8s;
+    -moz-animation: text-anime 2s ease forwards 1.8s;
+    -o-animation: text-anime 2s ease forwards 1.8s;
 }
 
 #logo path:nth-child(8) {
@@ -525,6 +540,9 @@ header {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 2.1s;
+    -webkit-animation: text-anime 2s ease forwards 2.1s;
+    -moz-animation: text-anime 2s ease forwards 2.1s;
+    -o-animation: text-anime 2s ease forwards 2.1s;
 }
 
 
@@ -533,6 +551,9 @@ header {
     stroke-dasharray: 419.45px;
     stroke-dashoffset: 419.45px;
     animation: text-anime 2s ease forwards 2.4s;
+    -webkit-animation: text-anime 2s ease forwards 2.4s;
+    -moz-animation: text-anime 2s ease forwards 2.4s;
+    -o-animation: text-anime 2s ease forwards 2.4s;
 }
 
 #logo path:nth-child(10) {
@@ -540,6 +561,9 @@ header {
     stroke-dasharray: 395.49px;
     stroke-dashoffset: 395.49px;
     animation: text-anime 2s ease forwards 2.7s;
+    -webkit-animation: text-anime 2s ease forwards 2.7s;
+    -moz-animation: text-anime 2s ease forwards 2.7s;
+    -o-animation: text-anime 2s ease forwards 2.7s;
 }
 
 #logo path:nth-child(11) {
@@ -547,6 +571,9 @@ header {
     stroke-dasharray: 262.67px;
     stroke-dashoffset: 267.67px;
     animation: text-anime 2s ease forwards 3s;
+    -webkit-animation: text-anime 2s ease forwards 3s;
+    -moz-animation: text-anime 2s ease forwards 3s;
+    -o-animation: text-anime 2s ease forwards 3s;
 }
 
 #logo path:nth-child(12) {
@@ -554,6 +581,9 @@ header {
     stroke-dasharray: 289.97px;
     stroke-dashoffset: 289.97px;
     animation: text-anime 2s ease forwards 3s;
+    -webkit-: text-anime 2s ease forwards 3s;
+    -moz-animation: text-anime 2s ease forwards 3s;
+    -o-animation: text-anime 2s ease forwards 3s;
 }
 
 #logo path:nth-child(13) {
@@ -561,6 +591,9 @@ header {
     stroke-dasharray: 435.06px;
     stroke-dashoffset: 435.06px;
     animation: text-anime 2s ease forwards 3s;
+    -webkit-animation: text-anime 2s ease forwards 3s;
+    -moz-animation: text-anime 2s ease forwards 3s;
+    -o-animation: text-anime 2s ease forwards 3s;
 }
 
 
@@ -656,10 +689,8 @@ header {
 
 /* END Background slideshow's text */
 
-/* ################ END SLIDESHOW SECTION ########### */
 
-/* ################ SIGN UP MODAL ################### */
-
+/* Sign Up modal */
 .modal-dialog {
     /* Setting height to modal box */
     height: 100%;
@@ -723,9 +754,10 @@ header {
     text-align: center;
 }
 
-/* ################ END SIGN UP MODAL ############### */
+/* END Sign Up modal */
 
-/* ######## RESPONSIVE DESIGN ######### */
+
+/* Responsive design for header section */
 
 /* Styling for divacies less than 320px */
 
@@ -779,8 +811,6 @@ header {
 
 /* END Responsive typography scale for mobile and tablet */
 
-/* * */
-
 /* Styling for turned over devises */
 
 @media (max-height: 414px) {
@@ -815,8 +845,6 @@ header {
 }
 
 /* END Styling for turned over devises */
-
-/* * */
 
 /* Styling for tablets */
 
@@ -1114,7 +1142,14 @@ header {
 
 /* END Styling for desktop */
 
-/* ######## END RESPONSIVE DESIGN ################### */
+/* END Responsive design for header section */
+
+/* ################ END HEADER SECTION ########### */
+
+
+                    /* * */
+
+
 
 /* ######## INDIVIDUAL APPROACH ##################### */
 
@@ -1124,12 +1159,10 @@ header {
 
 
 .individual-title {
-
     margin-bottom: 20px;
 }
 
 .individual-section {
-
     color: #777777;
     font-size: 1em;
     background-image: url(../images/individual/sm/individual-bg-sm.png);
@@ -1137,11 +1170,9 @@ header {
     background-position: top right;
     height: auto;
     padding-bottom: 50px;
-
 }
 
 .description p {
-
     width: 90%;
     margin: 80px auto;
     padding: 5px;
@@ -1169,7 +1200,6 @@ header {
 
 }
 
-
 .steps-title {
     font-family: Monolith;
     font-size: 1.414em;
@@ -1183,7 +1213,6 @@ header {
 .gathering-title-divider {
     color: #d9b23d;
 }
-
 
 .separation-title,
 .separation-title-divider {
@@ -1214,8 +1243,6 @@ header {
     border: 1px solid;
     margin: 0 auto;
 }
-
-
 
 
 
@@ -1319,7 +1346,7 @@ header {
 
 }
 
-/* Fixing sizes for teps's titles */
+/* Fixing sizes for steps's titles */
 
 @media (min-width: 1300px) {
     .steps-title {
@@ -1334,6 +1361,11 @@ header {
 /* END RESPONSIVE DESIGN */
 
 /* ######## END INDIVIDUAL APPROACH ################# */
+
+
+                       /* * */
+
+
 
 /* ######## ABOUT ME SECTION ######################## */
 
@@ -1372,6 +1404,8 @@ header {
 
 
 /* Responsive design for about section */
+
+/* Tablets */
 
 @media(min-width: 767px) {
 
@@ -1446,15 +1480,18 @@ header {
     }
 }
 
+/* END Tablets */
 
 
+/* Incrising size of Diana's photo */
 @media (min-width: 863px) {
     .diana-img {
         width: 103%;
     }
 }
+/* END Incrising size of Diana's photo */
 
-
+/* Desktop */
 @media (min-width: 992px) {
 
     .about-wrapper {
@@ -1472,14 +1509,19 @@ header {
         left: 60%;
 
     }
-
 }
-
+/* END Desktop */
 
 
 /* END Responsive design for about section */
 
 /* ######## END ABOUT ME SECTION #################### */
+
+
+
+                    /* * */
+                    
+                    
 
 /* ######## VIDEOS SECTION ########################## */
 
@@ -1540,7 +1582,9 @@ header {
 }
 
 
-/* Responsive design for tablets */
+/* Responsive design for Video's section */
+
+/* Tablets */
 
 @media(min-width: 767px) {
 
@@ -1567,6 +1611,9 @@ header {
 
 }
 
+/* END Tablets */
+
+/* Desktop */
 
 @media (min-width: 992px) {
 
@@ -1595,16 +1642,27 @@ header {
     }
 }
 
+/* END Desktop */
+
+
+/* Ipod Pro */
 @media (min-height: 1366px) {
     .videos-frame {
         height: 20vh;
     }
 }
 
+/* END Ipod Pro */
 
 /* END Responsive design for tablets */
 
 /* ######## END VIDEOS SECTION ###################### */
+
+
+
+                    /* * */
+
+
 
 /* ######## FEEDBACK SECTION ######################## */
 
@@ -1672,6 +1730,9 @@ header {
     margin-top: 45px;
     background-color: #fff;
     border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
     box-shadow: 1px 1px 5px 2px #d6d6d6;
     -webkit-box-shadow: 1px 1px 5px 2px #d6d6d6;
     -moz-box-shadow: 1px 1px 5px 2px #d6d6d6;
@@ -1729,6 +1790,8 @@ header {
 
 
 /* Responsive design for feedback's section */
+
+/* Tablets */
 
 @media (min-width: 767px) {
 
@@ -1805,6 +1868,11 @@ header {
 }
 
 
+/* END Tablets */
+
+
+/* Desktop */
+
 @media(min-width: 992px) {
     .feedback-title {
         margin-left: 100px;
@@ -1830,16 +1898,26 @@ header {
     }
 }
 
+/* END Desktop */
 
+/* Ipot pro and similar devices */
 @media(min-width: 1024px) {
     .feedback-section {
         background-image: url("../images/feedbacks/lg/feedback-lg-bg.jpg");
     }
 }
+/* END Ipot pro and similar devices */
 
 /* END Responsive design for feedback's section*/
 
 /* ######## END FEEDBACK SECTION #################### */
+
+
+
+                    /* * */
+
+
+
 
 /* ######## REGISTRATION SECTION #################### */
 
@@ -1916,8 +1994,7 @@ header {
 
 /* Responsive design for registration's section */
 
-@media (min-width: 576px) {}
-
+/* Tablets */
 @media (min-width: 767px) {
     .register-container {
         max-width: 600px;
@@ -1941,8 +2018,9 @@ header {
         height: 80px;
     }
 }
+/* END Tablets */
 
-
+/* Desktop */
 @media(min-width: 992px) {
 
     .register-section {
@@ -1996,9 +2074,17 @@ header {
 
 }
 
+/* END Desktop */
+
 /* END Responsive design for registration's section */
 
 /* ######## END REGISTRATION SECTION #################### */
+
+
+
+                        /* * */
+
+
 
 /* ################# FOTTER ############################# */
 
@@ -2080,6 +2166,7 @@ h4 {
 
 /* Responsive design for footers */
 
+/* Tablets */
 @media (min-width: 767px) {
     .footer-sl {
         border-bottom: none;
@@ -2097,10 +2184,11 @@ h4 {
     .footer-middle-column {
         text-align: center;
     }
-
-
 }
+/* END Tablets */
 
+
+/* Desktop */
 @media(min-width: 992px) {
 
     .footer-container {
@@ -2112,11 +2200,10 @@ h4 {
         margin: 0 auto;
     }
 }
+/* END Desktop */
 
 /* END Responsive design for footer */
 
 /* ###################### END FOTTER #################### */
 
-
-/* Loading icon */
 
