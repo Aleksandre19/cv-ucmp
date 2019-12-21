@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <title>Document</title>
+    <!--  Jquery script for loading button -->
     <script type="text/javascript">
         $(window).on('load', function() {
-             $(".loader").fadeOut("slow");
+            $(".loader").fadeOut("slow");
         });
     </script>
 </head>
@@ -22,14 +23,13 @@
 <body>
     <!-- Loading icon -->
     <div class="loader"></div>
+    <!-- Whole page wrapper -->
     <div id="all-page-wrapper">
         <!--  Home section linker -->
         <div id="home-page"></div>
         <!-- HEADER -->
         <header class="container-fluid header no-gutters ">
-
             <div class="row menuSlWrapper">
-
                 <!-- TOP MAIN MENU -->
                 <div class="col-8 col-sm-9 col-md-10 top-menu-wrapper">
                     <nav class="navbar navbar-expand-md navbar-light main-menu">
@@ -47,7 +47,6 @@
                     </nav>
                 </div>
                 <!-- / TOP MAIN MENU -->
-
                 <!-- TOP SOCIAL LINKS -->
                 <div class="col-4 col-sm-3 col-md-2 social-links">
                     <div class="row">
@@ -58,12 +57,10 @@
                     </div>
                 </div>
                 <!-- /TOP SOCIAL LINKS -->
-
             </div>
         </header>
         <!-- /HEADER -->
-
-
+        <!-- Slideshow's container -->
         <section class="container-fluid sections ">
             <!-- Here goes background slideshow's images -->
             <div class="container-fluid slideshow">
@@ -71,10 +68,11 @@
                 <!-- /Welcoming text animations's container-->
             </div>
         </section>
+        <!-- /Slideshow's container -->
+        <!-- Welcoming text animations's container-->
         <div class="text-container">
-            <!-- Welcoming text animations's container-->
+            <!-- Weight & Health's svg file container  -->
             <div id="wh-container">
-                <!-- Weight & Health's svg file container  -->
                 <!-- Weight & Health's svg file -->
                 <svg id="logo" width="100%" height="97" viewBox="0 0 973 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d)">
@@ -105,56 +103,61 @@
                         </defs>
                     </svg>
                 <!-- /Weight & Health's svg file -->
-                <span class="sr-only"> Weight & Health </span>
                 <!-- Span for screen reader -->
+                <span class="sr-only"> Weight & Health </span>
+                <!-- /Span for screen reader -->
             </div>
-            <!-- Weight & Health's svg file container  -->
-
-            <!-- Consultation section -->
+            <!-- /Weight & Health's svg file container  -->
+            <!-- Animation's texts -->
             <div id="free-consultation-text">
                 <h1>Free Consultation With </h1>
             </div>
-            <!-- /Consultation section -->
-
-            <!-- Diana's section -->
             <div id="diana">
                 <h2>
                     Doctor Diana Voronina-Akhvlediani
                 </h2>
             </div>
-            <!--/ Diana's section -->
-
-            <p><button class="btn btn-lg btn-signUp" data-toggle="modal" data-target="#signUpModal">Sign Up</button></p>
+            <!-- /Animation's texts -->
             <!-- Sing up button -->
-
+            <p><button class="btn btn-lg btn-signUp" data-toggle="modal" data-target="#signUpModal">Sign Up</button></p>
+            <!-- /Sing up button -->
         </div>
+        <!-- /Weight & Health's svg file container  -->
 
         <!--  Individual section linker -->
         <a id="individual-page"></a>
+        <!--  /Individual section linker -->
+
         <!-- Individual approach section-->
-
         <section class="sections individual-section">
-
+            <!-- Individual section's wrapper -->
             <div class="container-fluid individual-section-wrapper">
+                <!-- Centering all section above 1300px screen resolution -->
                 <div class="individual-section-centerer">
-                    <!-- Centering all section above 1300px screen resolution -->
+                    <!-- Individual section's texts -->
                     <article class="description">
-
+                        <!-- Individual section's description -->
                         <p>
                             The human consists with three independent, interconnected centers which are: body, nerves and brain. Because they are interconnected one's state reflects and influence other's state. The excess weight often can be caoused by disbalanced states of nerves
                             and brain. That is way by reducing the amount of the food to reduce the weight can lead to health's problems. To avoid health's issues before starting diet one must know the reason which causes excess weight. Because there
                             is no two same leaves in the world the researing of the reasons can be done by individual approach.
-
                         </p>
+                        <!-- /Individual section's description -->
+                        <!-- Individual section's Title -->
                         <h2 class="section-title individual-title">
                             Individual approach
                         </h2>
+                        <!-- /Individual section's title -->
+                        <!-- Individual section's icon and underline -->
                         <hr class="section-title-underline individual-title-underline ">
                         <i class="individual-desc-icon d-none "></i>
                         <span class="sr-only"> Individual Approach </span>
+                        <!-- /Individual section's icon and underline -->
                     </article>
-
+                    <!-- /Individual section's texts -->
+                    <!-- Individual section's steps -->
                     <div class="row all-steps-wrapper">
+                        <!-- Step 1 gathering information -->
                         <div class="col-sm-4 individual-steps gathering-information">
                             <div class="row">
                                 <article>
@@ -167,12 +170,12 @@
                                     <i class="far fa-comments individual-icons"></i>
                                     <p class="steps-text gathering-text">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-
                                     </p>
                                 </article>
                             </div>
                         </div>
-
+                        <!-- /Step 1 gathering information -->
+                        <!-- Step 2 seperation of pathologies -->
                         <div class="col-sm-4 individual-steps individual-separation">
                             <div class="row">
                                 <article>
@@ -189,7 +192,8 @@
                                 </article>
                             </div>
                         </div>
-
+                        <!-- /Step 2 seperation of pathologies -->
+                        <!-- Step 3 doing research -->
                         <div class="col-sm-4 individual-steps individual-research">
                             <div class="row">
                                 <article>
@@ -206,22 +210,30 @@
                                 </article>
                             </div>
                         </div>
+                        <!-- /Step 3 doing research -->
                     </div>
+                    <!-- /Individual section's steps -->
                 </div>
+                <!-- /Centering all section above 1300px screen resolution -->
             </div>
+            <!-- /Individual section's wrapper -->
         </section>
-
         <!-- /Individual approach section-->
 
+
         <!--  About section linker -->
+        <a id="about-page"></a>
+        <!--  /About section linker -->
+
 
         <!-- About Me section-->
-        <a id="about-page"></a>
-
         <section class="sections about-me">
+            <!-- Div for background image of medium devices -->
             <div class="about-md-bg">
+                <!-- About section container -->
                 <div class="container-fluid about-wrapper">
                     <div class="row">
+                        <!-- About me's text -->
                         <div class="col-md-6">
                             <div class="row">
                                 <article>
@@ -239,27 +251,33 @@
                                     </p>
                                 </article>
                             </div>
-
                         </div>
+                        <!-- /About me's text -->
+                        <!-- Diana's image -->
                         <div class="d-none d-md-block col-md-6 diana-img-container">
                             <div class="row">
-
                                 <img src="assets/images/about/md/diana-md-img.png" alt="Diana's image" class="diana-img d-lg-none" />
                                 <img src="assets/images/about/lg/diana-lg-img.png" alt="Diana's image" class="diana-img d-none d-lg-block" />
                             </div>
                         </div>
+                        <!-- /Diana's image -->
                     </div>
                 </div>
+                <!-- /About section container -->
             </div>
+            <!-- /Div for background image of medium devices -->
         </section>
-
-        <!-- /About Me section-->
+        <!-- About Me section-->
 
         <!--  Videos section linker -->
         <a id="videos-page"></a>
-        <!-- Videos section-->
+        <!-- /Videos section linker -->
+
+        <!-- Video's section -->
         <section class="section videos-section">
+            <!-- Video's section wrapper -->
             <div class="videos-wrapper">
+                <!-- Video's section title -->
                 <div class="videos-title-container">
                     <h2 class="section-title videos-title">
                         Videos
@@ -267,9 +285,11 @@
                     <hr class="section-title-underline videos-title-underline">
                     <i class="videos-section-title-icon"></i>
                 </div>
+                <!-- /Video's section title -->
+                <!-- Video's section container -->
                 <div class="container-fluid">
                     <div class="row iframe-wrapper">
-
+                        <!-- Video 1-->
                         <div class="col-md-6 col-lg-4 video-article">
                             <div class="row">
                                 <article>
@@ -281,6 +301,8 @@
                                 </article>
                             </div>
                         </div>
+                        <!-- /Video 1-->
+                        <!-- Video 2-->
                         <div class="col-md-6 col-lg-4 video-article ">
                             <div class="row">
                                 <article>
@@ -292,6 +314,8 @@
                                 </article>
                             </div>
                         </div>
+                        <!-- /Video 2-->
+                        <!-- Video 3-->
                         <div class="d-none d-lg-block col-lg-4 video-article">
                             <div class="row">
                                 <article>
@@ -303,17 +327,24 @@
                                 </article>
                             </div>
                         </div>
+                        <!-- Video 3-->
                     </div>
                 </div>
+                <!-- /Video's section container -->
             </div>
+            <!-- Video's section wrapper -->
         </section>
         <!-- /Videos section-->
 
         <!--  Feedbacks section linker -->
         <a id="feedbacks-page"></a>
-        <!-- Feedbacks section-->
+        <!-- /Feedbacks section linker-->
+
+        <!-- Feedback's section -->
         <section class="sections feedback-section">
+            <!-- Feedback's section wrapper -->
             <div class="feedback-wrapper">
+                <!-- Feedback's section title -->
                 <div class="videos-title-container">
                     <h2 class="section-title feedback-title">
                         Feedbacks
@@ -321,86 +352,126 @@
                     <hr class="section-title-underline feedback-title-underline">
                     <i class="feedback-section-title-icon"></i>
                 </div>
+                <!-- /Feedback's section title -->
+                <!-- Quotes wrapper -->
                 <div class="all-quote-wrapper">
+                    <!-- Quote 1 -->
                     <div class="quote-wrapper img1">
                         <blockquote class="feedback-container">
                             <div class="row">
+                                <!-- Quote's avatar -->
                                 <div class="feedback-img feedback1">
-
+                                    <!-- Here goes avatar by background-image property -->
                                 </div>
+                                <!-- /Quote's avatar -->
+                                <!-- Quote's text -->
                                 <p class="feedback-text">
                                     <i class="fas fa-quote-left front-quote feedback-quote"></i> Not only losing weight but also understand much more about yourself and step on right and healthy way in communication with yourself
-
                                     <i class="fas fa-quote-right black-quote feedback-quote"></i>
                                 </p>
+                                <!-- /Quote's text -->
                             </div>
                         </blockquote>
                     </div>
+                    <!-- /Quote 1 -->
+                    <!-- Quote 2 -->
                     <div class="quote-wrapper img2">
                         <blockquote class="feedback-container">
                             <div class="row">
+                                <!-- Quote's avatar -->
                                 <div class="feedback-img feedback2">
-
+                                    <!-- Here goes avatar by background-image property -->
                                 </div>
+                                <!-- /Quote's avatar -->
+                                <!-- Quote's text -->
                                 <p class="feedback-text">
                                     <i class="fas fa-quote-left front-quote feedback-quote"></i> Eating everything and losing weight is really unimaginable but real case for me. It was stressfree to do it.
                                     <i class="fas fa-quote-right black-quote feedback-quote"></i>
                                 </p>
+                                <!-- /Quote's text -->
                             </div>
                         </blockquote>
                     </div>
+                    <!-- /Quote 2-->
+                    <!-- Quote 3 -->
                     <div class="quote-wrapper img3">
                         <blockquote class="feedback-container">
                             <div class="row">
+                                <!-- Quote's avatar -->
                                 <div class="feedback-img feedback3">
-
+                                    <!-- Here goes avatar by background-image property -->
                                 </div>
+                                <!-- /Quote's avatar -->
+                                <!-- Quote's text -->
                                 <p class="feedback-text">
                                     <i class="fas fa-quote-left front-quote feedback-quote"></i> She really finds the key which cause the hight weight. Managing relationship around me not only changed my life but also lost my weight.
                                     <i class="fas fa-quote-right black-quote feedback-quote"></i>
                                 </p>
+                                <!-- /Quote's text -->
                             </div>
                         </blockquote>
                     </div>
+                    <!-- /Quote 3 -->
+                    <!-- Quote 4 -->
                     <div class="quote-wrapper img4 d-none d-sm-block">
                         <blockquote class="feedback-container">
                             <div class="row">
+                                <!-- Quote's avatar -->
                                 <div class="feedback-img feedback4">
-
+                                    <!-- Here goes avatar by background-image property -->
                                 </div>
+                                <!-- /Quote's avatar -->
+                                <!-- Quote's text -->
                                 <p class="feedback-text last-feedback">
                                     <i class="fas fa-quote-left front-quote feedback-quote"></i> I could never imagine that the weight losing was possible such way. It is really right and healthy way to do it.
                                     <i class="fas fa-quote-right black-quote feedback-quote"></i>
                                 </p>
+                                <!-- /Quote's text -->
                             </div>
                         </blockquote>
                     </div>
+                    <!-- /Quote 4 -->
                 </div>
+                <!-- /Quotes wrapper -->
             </div>
+            <!-- /Feedback's section wrapper -->
         </section>
         <!-- /Feedbacks section-->
 
         <!--  Consultation section linker -->
         <a id="register-page"></a>
+        <!--  /Consultation section linker -->
+
         <!-- Consultation's section-->
         <section class="sections register-section">
+            <!-- Left and right background images -->
             <div class="first-bg-img">
-
+                <!-- Here goes left top background image -->
             </div>
             <div class="second-bg-img">
-
+                <!-- Here goes bottom right background image -->
             </div>
+            <!-- /Left and right background images -->
+            <!-- Registration form wrapper -->
             <div class="register-wrapper">
+                <!-- Registration form container -->
                 <div class="register-container">
                     <div class="row">
+                        <!-- Registration's texts -->
                         <div class="register-title-container">
+                            <!-- Registration's title -->
                             <h2 class="register-title">
                                 Do you want to have free consultation?
                             </h2>
+                            <!-- /Registration's title -->
+                            <!-- Registration's description-->
                             <p class="register-text">
                                 If you wan to have free consultation and more information than please fill the from below and i will reach you within 24 hours
                             </p>
+                            <!-- /Registration's description-->
                         </div>
+                        <!-- /Registration's texts -->
+                        <!-- Registration's form -->
                         <div class="register-form">
                             <form action="#" method="post">
                                 <input type="text" id="name" name="name" class="register-inputs" placeholder=" Your name" required>
@@ -409,83 +480,111 @@
                                 <input type="submit" id="submit" class="register-inputs" value="Register" required>
                             </form>
                         </div>
+                        <!-- /Registration's form -->
                     </div>
                 </div>
+                <!-- /Registration form container -->
             </div>
+            <!-- Registration form wrapper -->
         </section>
         <!-- /Consultation's section-->
 
 
         <!-- footer section -->
         <footer class="footer">
+            <!-- Footer wrapper -->
             <div class="footer-wrapper">
+                <!-- Footer container -->
                 <div class="footer-container">
                     <div class="row">
+                        <!-- Footer's first column -->
                         <div class="col-sm-4 ">
                             <div class="row">
+                                <!-- Footer menu's links -->
                                 <ul class="footer-section-links">
                                     <li><a href="#home-page">Home</a></li>
                                     <li><a href="#about-page">About Me</a></li>
                                     <li><a href="#videos-page">Videos</a></li>
                                     <li><a href="#register-page">Consultation</a></li>
                                 </ul>
+                                <!-- /Footer menu's links -->
                             </div>
                         </div>
+                        <!-- /Footer's first column -->
+                        <!-- Footer's second column -->
                         <div class="col-sm-4 footer-middle-column">
                             <div class="row">
+                                <!-- Footer's videos links. Those shows up on mobile devices and hides on tablets and above-->
                                 <ul class="d-md-none">
                                     <li><a href="">Results of marathon participants</a></li>
                                     <li><a href="">Weight loss algorithm</a></li>
                                     <li><a href="">Physiologically weight loss</a></li>
                                 </ul>
+                                <!-- /Footer's videos links. -->
                             </div>
+                            <!-- Footer's social links. Those are hidden on mobile devices and shows up on tablets and above -->
                             <ul class="footer-sl d-none d-md-block">
                                 <li>
                                     <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook footer-sl-i"></i></a>
                                     <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram footer-sl-i"></i></a>
                                 </li>
                             </ul>
+                            <!-- /Footer's social links -->
                         </div>
+                        <!-- /Footer's second column -->
+                        <!-- Footer's third column -->
                         <div class="col-sm-4">
                             <div class="row">
+                                <!-- Footer's social links.  Those shows up on mobile devices and are hidden on tablets and above -->
                                 <ul class="footer-sl d-md-none footer-sm-sl">
                                     <li>
                                         <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook footer-sl-i"></i></a>
                                         <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram footer-sl-i"></i></a>
                                     </li>
                                 </ul>
+                                <!-- /Footer's social links. -->
+                                <!-- Footer's videos links. Those are hidden on mobile devices and shows up on tablets and above -->
                                 <ul class="d-none d-md-block">
                                     <li><a href="https://www.youtube.com/embed/M8S400st6-E" target="_blank">Results of marathon participants</a></li>
                                     <li><a href="https://www.youtube.com/embed/NzeFsI2Zoso" target="_blank">Weight loss algorithm</a></li>
                                     <li><a href="https://www.youtube.com/embed/Re6V4-Qe1eo" target="_blank">Physiologically weight loss</a></li>
                                 </ul>
-
+                                <!-- /Footer's videos links. -->
                             </div>
                         </div>
+                        <!-- /Footer's third column -->
                     </div>
+                    <!-- Copyright -->
                     <h4> &copy; 2019 - 2020 Diana Voronina-Akhvlediani</h4>
+                    <!-- /Copyright -->
                 </div>
+                <!-- Footer container -->
             </div>
         </footer>
         <!-- /footer section -->
-
         <!-- / All site wrapper div -->
 
         <!-- Sign up pop up -->
         <div id="modalContainer">
             <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
                 <div class="modal-dialog" role="document">
+                    <!-- Modal container -->
                     <div class="modal-content">
+                        <!-- Modal header -->
                         <div class="modal-header">
-
+                            <!-- Modal description -->
                             <h3>
                                 For more information please fill the from below and i will reach you within 24 hours.
                             </h3>
-
+                            <!-- /Modal description -->
+                            <!-- Modal sign up button -->
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
-                        </button>
+                            </button>
+                            <!-- /Modal sign up button -->
                         </div>
+                        <!-- /Modal header -->
+                        <!-- Modal body -->
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
@@ -504,21 +603,22 @@
                                 <div class="btn-moddal-wrapper">
                                     <button type="submit" class="btn btn-modal">SEND</button>
                                     </p>
+                                </div>
                             </form>
-
-                            </div>
                         </div>
+                        <!--/ Modal body -->
                     </div>
+                    <!-- Modal container -->
                 </div>
             </div>
         </div>
         <!-- /Sign up pop up -->
     </div>
+
     <!-- Bootstrap's javascript links-->
-    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <!-- /Bootstrap's javascript links-->
 </body>
 
 </html>
