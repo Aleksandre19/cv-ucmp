@@ -1507,6 +1507,14 @@ header {
     border-radius: 10px;
 }
 
+.video-title{
+    font-family: Monolith;
+    text-align: center;
+    font-size: 1.4em;
+    color: #5e5e5e;
+    margin-top: 50px;
+}
+
 .videos-title {
     margin-bottom: 0;
 }
@@ -2037,7 +2045,9 @@ h4 {
     text-align: center;
 }
 
-
+.footer-container{
+    margin-top: 40px;
+}
 
 .footer-container h4 {
     text-align: center;
