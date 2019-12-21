@@ -139,7 +139,6 @@ header {
 /* END Burger menu */
 .main-menu {
     padding: 0;
-    min-width: 650px !important;
 }
 
 
@@ -157,6 +156,7 @@ header {
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 2px;
+    white-space: nowrap;
     transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
