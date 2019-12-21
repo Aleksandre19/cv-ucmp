@@ -137,9 +137,9 @@ header {
 }
 
 /* END Burger menu */
-
 .main-menu {
     padding: 0;
+    min-width: 650px !important;
 }
 
 
@@ -813,6 +813,14 @@ header {
 @media (min-width: 768px) {
 
     /* Styling animation's text for tablets */
+    .navbar-nav{
+        margin-left: 0;
+    }
+    
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right:0; 
+        padding-left:0; 
+    }
     .main-menu li a {
         font-size: 1.414em;
     }
@@ -954,7 +962,14 @@ header {
 
 /* END Hidding social icons less than 256px */
 
-/* * */
+/* Style for Desktops */
+@media (min-width: 992px){
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .5rem; 
+        padding-left: .5rem; 
+    }
+}
+/* END Style for desktop */
 
 /* Styling animation's text for table pro */
 
