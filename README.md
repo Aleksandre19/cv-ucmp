@@ -4,10 +4,7 @@ Stream One Project: User-Centric Frontend Development - Code Institute
 This is my mother's website about lossing of weight. Because the lossing weight does't only mean to eat less, she use individual approach for discovering of real reasons which caouses hight weight. The reasons can be sometimes emotional or psychological.
 
 ## Demo
-A live demo can be found [here](https://www.haleyschafer.com/).
-
-![Desktop Demo](https://raw.githubusercontent.com/hschafer2017/HSCHAFER-Portfolio/master/assets/images/portfolioview.gif "Desktop Demo")
-
+A live demo can be found [here](https://aleksandre19.github.io/User-Centric-Frontend-Development-Mileston-Project/).
 
 ## UX
 
