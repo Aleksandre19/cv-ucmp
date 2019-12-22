@@ -36,6 +36,10 @@ To achieve my goals i choosed landing page. First section was for eye catching a
 
 
 ## Features
-This site uses the scrollSpy feature in Bootstrap with an extra JavaScript function added to create a 'smooth scrolling' effect. On the mobile divices the navbar is collapsed and it expands on tablets and above. The menu's links uses Hover.css effect to move up on hovering. I use Bootstrap's Scrollspy feature to mark menu's link when user is on appropriate section. The site uses Bootstrap's Modal to pop up the singup form by clicking on Sign Up button in first section. In the first section i use SVG file for WEIGHT & HEALTH text to animate strokes of this text with CSS3 in sequence. 
+This site uses loading icon while it loads. I use scrollSpy feature in Bootstrap with an extra JavaScript function added to create a 'smooth scrolling' effect. On the mobile divices the navbar is collapsed and it expands on tablets and above. The menu's links uses Hover.css effect to move up on hovering. I use Bootstrap's Scrollspy feature to mark menu's link when user is on appropriate section. The site uses Bootstrap's Modal to pop up the singup form by clicking on Sign Up button in first section. In the first section i use SVG file for WEIGHT & HEALTH text to animate strokes of this text with CSS3 in sequence. 
 
+### Features Left to Implement
+In the future i would like to: add sublinks to video's link to categorise and expand video's section, add blog section, write animation's script in Javsscript/Jquery, take good quality Diana's photo and make adjustment in Photoshop, make to work registration's section, improve video section's look 
 
+### Individual approach's section
+ 

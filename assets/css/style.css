@@ -1167,7 +1167,6 @@ header {
 .individual-steps {
     width: 90%;
     margin: 0 auto;
-
 }
 
 .steps-title {
@@ -1237,7 +1236,15 @@ header {
     .all-steps-wrapper {
         margin-top: 150px;
     }
-
+    
+    .individual-steps{
+        min-height: 500px;
+        background-image: url("../images/individual/step-container-bg.png");
+        background-repeat: no-repeat;
+        background-position: -1%;
+        background-size: 25% 100%;
+    }
+    
     .individual-title {
         position: relative;
         max-width: 340px;
@@ -1312,6 +1319,10 @@ header {
 
     .separation-title {
         font-size: 1.5vw;
+    }
+    
+    .steps-text{
+        padding: 0px 5px 0px 45px;
     }
 
 }
