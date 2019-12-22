@@ -1202,6 +1202,7 @@ header {
 }
 
 .steps-text {
+    line-height: 28px;
     text-align: left;
     padding: 0px 0px 0px 10px;
 }
