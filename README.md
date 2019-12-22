@@ -4,7 +4,7 @@ Stream One Project: User-Centric Frontend Development - Code Institute
 This is my mother's website about lossing of weight and health. Because the lossing of weight does't only mean to eat less, she use individual approach for discovering of real reasons which caouses of hight weight. The reasons can be sometimes emotional or psychological.
 
 ## Demo
-A live demo can be found [here](https://aleksandre19.github.io/User-Centric-Frontend-Development-Mileston-Project/).
+A live demo can be found [here](https://aleksandre19.github.io/ucmp/).
 
 ## UX
 
@@ -100,8 +100,10 @@ This site was tested all modern browsers (Chrome, Safari, Internet Explorer, Fir
 
 # Deployment 
 
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
-To run locally, you can clone this repository directly into the editor of your choice by pasting git clone  LINK
+This site is hosted using GitHub pages, deployed directly from the master branch.
+The link can be found [here](https://github.com/Aleksandre19/ucmp)
+The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone (https://aleksandre19.github.io/ucmp/)
 into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
  
 # Credits
