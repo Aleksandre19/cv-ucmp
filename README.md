@@ -10,7 +10,7 @@ A live demo can be found [here](https://aleksandre19.github.io/User-Centric-Fron
 
 ### User stories
 
-The user of this website should understand what is site about, what are keys of this medhot and way it is special. 
+The user of this website should understand what is site about, what are keys of this medhod and way it is special. 
 
 
 ### Strategy
@@ -24,7 +24,7 @@ Firt of all for users of this website i wanted to create some pleasant animation
 To achieve my goals i choosed landing page. First section was for eye catching animation. Second section i used to expand information about method and how can it be done. Third section i used to show  by whom can it be done. Forth section i used to show author's experience by providing them videos. Fifth section i used for feedbacks and finally in the end of the page when users probably should have the aroused interest i provided ability to get more information by free consultation's form.    
 
 ### Skeleton
-[The sketch file on balsamiq](https://aleksandre19.github.io/files/daiana-website/dianas-website-sketch-balsamiq.pdf)
+[The sketch file on balsamiq](https://github.com/Aleksandre19/files/blob/master/daiana-website/dianas-website-sketch-balsamiq.pdf)
 
 ### Surface
 [PSD file](https://github.com/Aleksandre19/files/blob/master/daiana-website/index.psd.zip)
