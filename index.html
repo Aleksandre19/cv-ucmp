@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Document</title>
     <!--  Jquery script for loading button -->
-    <script type="text/javascript">
+    <script>
         $(window).on('load', function() {
             $(".loader").fadeOut("slow");
         });
@@ -61,7 +61,7 @@
         </header>
         <!-- /HEADER -->
         <!-- Slideshow's container -->
-        <section class="container-fluid sections " id="home-page">
+        <section class="container-fluid sections ">
             <!-- Here goes background slideshow's images -->
             <div class="container-fluid slideshow">
                 <!-- Here goes texts of animations -->
@@ -131,6 +131,10 @@
         <section class="sections individual-section" >
             <!-- Individual section's wrapper -->
             <div class="container-fluid individual-section-wrapper">
+
+                <h2 class="section-title individual-title">
+                    Individual approach
+                </h2>
                 <!-- Centering all section above 1300px screen resolution -->
                 <div class="individual-section-centerer">
                     <!-- Individual section's texts -->
@@ -143,9 +147,8 @@
                         </p>
                         <!-- /Individual section's description -->
                         <!-- Individual section's Title -->
-                        <h2 class="section-title individual-title">
-                            Individual approach
-                        </h2>
+                        
+
                         <!-- /Individual section's title -->
                         <!-- Individual section's icon and underline -->
                         <hr class="section-title-underline individual-title-underline ">
@@ -284,7 +287,7 @@
                             <div class="row">
                                 <article>
                                     <h3 class="video-title">Results Of Marathon Participants</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/M8S400st6-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/M8S400st6-E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <p class="video-description">
                                         In this video I talk about result of participants in the project.
                                     </p>
@@ -297,7 +300,7 @@
                             <div class="row">
                                 <article>
                                     <h3 class="video-title">Weight Loss Algorithm</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/NzeFsI2Zoso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/NzeFsI2Zoso" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <p class="video-description">
                                        In this video I talk physical, emotional and mental aspects which most often causes diseases or pathologies.
                                     </p>
@@ -310,7 +313,7 @@
                             <div class="row">
                                 <article>
                                     <h3 class="video-title">Physiologically Weight Loss</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/Re6V4-Qe1eo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/Re6V4-Qe1eo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     <p class="video-description">
                                         In this video I talk about losing weight without any limitation of the natural or physiological needs.
                                     </p>
@@ -464,7 +467,7 @@
                                 <input type="text" id="name" name="name" class="register-inputs" placeholder=" Your name" required>
                                 <input type="text" id="lastname" name="lastname" class="register-inputs" placeholder=" Your last name" required>
                                 <input type="email" id="email" name="email" class="register-inputs" placeholder=" Your email address" required>
-                                <input type="submit" id="submit" class="register-inputs" value="Register" required>
+                                <input type="submit" id="submit" class="register-inputs" value="Register">
                             </form>
                         </div>
                         <!-- /Registration's form -->
@@ -591,7 +594,6 @@
                                 </div>
                                 <div class="btn-moddal-wrapper">
                                     <button type="submit" class="btn btn-modal">SEND</button>
-                                    </p>
                                 </div>
                             </form>
                         </div>
@@ -604,7 +606,7 @@
         <!-- /Sign up pop up -->
     </div>
     <!-- scrollSpy delay function  -->
-    <script type="text/javascript">
+    <script>
         $('a[href^="#"]').on('click', function(event) {
             var target = $(this.getAttribute('href'));
             if( target.length ) {
