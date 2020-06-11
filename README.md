@@ -1,5 +1,5 @@
 # Doctor Diana-Voronina-Akhvlediani's website
-Stream One Project: User-Centric Frontend Development - Code Institute 
+Stream One Project: User-Centric Frontend Development - Code Instituteee 
 
 This is my mother's website about lossing of weight and health. Because the lossing of weight does't only mean to eat less, she use individual approach for discovering of real reasons which caouses of hight weight. The reasons can be sometimes emotional or psychological.
 
