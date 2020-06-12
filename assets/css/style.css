@@ -402,7 +402,6 @@ header {
     padding-right: 40px;
     border-radius: 10px;
     background-color: #d95304;
-    border: 1px solid #d95304;
     color: #fff;
 }
 
@@ -432,7 +431,6 @@ header {
     /* Welcoming text's & modal sign up button's hovering */
     /* Welcome text's sign up button hover */
     background-color: #a83e00;
-    border: 1px solid #a83e00;
     color: #dadada;
 }
 
@@ -1157,7 +1155,7 @@ header {
     height: 50px;
     background-image: url("../images/individual/icon.png");
     background-repeat: no-repeat;
-    background-origin: center;
+    
 }
 
 .individual-steps .row {
@@ -1445,7 +1443,6 @@ header {
         margin-left: 170px;
         background-image: url("../images/about/about-icon.png");
         background-repeat: no-repeat;
-        background-origin: center;
     }
 
     .diana-img-container {
@@ -1965,7 +1962,7 @@ header {
 }
 
 #submit {
-    border: 1px solid #04d9d9;
+    border: 1px solid #04cbd9;
     background-color: #04d9d9;
     text-transform: uppercase;
     color: #fff;
