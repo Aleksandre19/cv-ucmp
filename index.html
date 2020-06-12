@@ -275,6 +275,7 @@
 
         <!-- Video's section -->
         <section class="section videos-section" id="videos-page">
+
             <!-- Video's section wrapper -->
             <div class="videos-wrapper">
                 <!-- Video's section title -->
@@ -287,49 +288,131 @@
                 </div>
                 <!-- /Video's section title -->
                 <!-- Video's section container -->
-                <div class="container-fluid">
-                    <div class="row iframe-wrapper">
-                        <!-- Video 1-->
-                        <div class="col-md-6 col-lg-4 video-article">
-                            <div class="row">
-                                <article>
-                                    <h3 class="video-title">Results Of Marathon Participants</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/M8S400st6-E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p class="video-description">
-                                        In this video I talk about result of participants in the project.
-                                    </p>
-                                </article>
+
+                <!-- This part of the code appears then devices are mobiles -->
+                <div class="d-md-none all_videos_wrapper_for_mobiles">
+
+                    <div class="container-fluid">
+                        <div class="row iframe-wrapper">
+
+                            <!-- Video 1-->
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <div class="row">
+                                    <article>
+                                        <h3 class="video-title">Results Of Marathon Participants</h3>
+                                        <iframe class="videos-frame" src="https://www.youtube.com/embed/M8S400st6-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p class="video-description">
+                                            In this video I talk about result of participants in the project.
+                                        </p>
+                                    </article>
+                                </div>
                             </div>
-                        </div>
-                        <!-- /Video 1-->
-                        <!-- Video 2-->
-                        <div class="col-md-6 col-lg-4 video-article ">
-                            <div class="row">
-                                <article>
-                                    <h3 class="video-title">Weight Loss Algorithm</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/NzeFsI2Zoso" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p class="video-description">
-                                       In this video I talk physical, emotional and mental aspects which most often causes diseases or pathologies.
-                                    </p>
-                                </article>
+                            <!-- /Video 1-->
+
+
+                            <!-- Video 2-->
+                            <div class="col-md-6 col-lg-4 video-article ">
+                                <div class="row">
+                                    <article>
+                                        <h3 class="video-title">Weight Loss Algorithm</h3>
+                                        <iframe class="videos-frame" src="https://www.youtube.com/embed/NzeFsI2Zoso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p class="video-description">
+                                        In this video I talk physical, emotional and mental aspects which most often causes diseases or pathologies.
+                                        </p>
+                                    </article>
+                                </div>
                             </div>
-                        </div>
-                        <!-- /Video 2-->
-                        <!-- Video 3-->
-                        <div class="d-none d-lg-block col-lg-4 video-article">
-                            <div class="row">
-                                <article>
-                                    <h3 class="video-title">Physiologically Weight Loss</h3>
-                                    <iframe class="videos-frame" src="https://www.youtube.com/embed/Re6V4-Qe1eo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    <p class="video-description">
-                                        In this video I talk about losing weight without any limitation of the natural or physiological needs.
-                                    </p>
-                                </article>
+                            <!-- /Video 2-->
+
+
+                            <!-- Video 3-->
+                            <div class="d-none d-lg-block col-lg-4 video-article">
+                                <div class="row">
+                                    <article>
+                                        <h3 class="video-title">Physiologically Weight Loss</h3>
+                                        <iframe class="videos-frame" src="https://www.youtube.com/embed/Re6V4-Qe1eo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <p class="video-description">
+                                            In this video I talk about losing weight without any limitation of the natural or physiological needs.
+                                        </p>
+                                    </article>
+                                </div>
                             </div>
+                            <!-- Video 3-->
+
+
                         </div>
-                        <!-- Video 3-->
                     </div>
+
+                </div>    
+
+
+                <!-- This part of the code appears then device is not mobile -->
+                <div class="d-none d-md-block all_videos_wrapper_for_large_devices">
+
+                    <!-- This div element wrappes video's titles -->
+                    <div class="videos_titles_wrapper">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <h3 class="video-title">Results Of Marathon Participants</h3>
+                            </div>
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <h3 class="video-title">Weight Loss Algorithm</h3>
+                            </div>
+                            <div class=" d-none d-lg-block col-md-6 col-lg-4 video-article">
+                                <h3 class="video-title">Physiologically Weight Loss</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- This div element wrappes video's players -->
+                    <div class="videos_content_wrapper">
+                        <div class="row">
+
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <iframe class="videos-frame" src="https://www.youtube.com/embed/M8S400st6-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <iframe class="videos-frame" src="https://www.youtube.com/embed/NzeFsI2Zoso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="d-none d-lg-block col-md-6 col-lg-4 video-article">
+                                <iframe class="videos-frame" src="https://www.youtube.com/embed/Re6V4-Qe1eo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                        </div>   
+                    </div>
+
+
+                    <!-- This element wrapps video's descriptions --> 
+                    <div class="videos_text_wrapper">
+
+                        <div class="row">
+
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <p class="video-description">
+                                    In this video I talk about result of participants in the project.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 video-article">
+                                <p class="video-description">
+                                    In this video I talk physical, emotional and mental aspects which most often causes diseases or pathologies.
+                                </p>
+                            </div>
+
+                            <div class=" d-none d-lg-block col-md-6 col-lg-4 video-article">
+                                <p class="video-description">
+                                    In this video I talk about losing weight without any limitation of the natural or physiological needs.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
                 <!-- /Video's section container -->
             </div>
             <!-- Video's section wrapper -->
