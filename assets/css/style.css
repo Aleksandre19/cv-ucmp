@@ -2220,3 +2220,10 @@ h4 {
 .navbar-light .navbar-nav .nav-link:hover{
     color: #00dddb;
 }
+
+
+
+.title_for_w3c{
+    opacity: 0;
+    font-size: 1px;
+}
