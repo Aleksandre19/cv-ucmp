@@ -43,7 +43,8 @@ This site uses the scrollSpy feature in Bootstrap with an extra JavaScript funct
 ### Features Left to Implement
 In the future I would like to: add sublinks to video's link to categorise and expand video's section, add blog section, write animation's script in Javsscript/Jquery, make to work registration's section, improve video section's look, animate modal's pop up window with Javascript/Jquery. 
 
-# Describing sections: 
+# Describing the sections: 
+
 
 ## First - Animation Section
 This is first section and it appears as soon as the page loads. User gets messages about webpage by animating texts and the images under those texts. This animation is done only by CSS3.
@@ -107,7 +108,7 @@ This site was tested in all modern browsers (Chrome, Safari, Internet Explorer, 
 # Deployment 
 
 This site is hosted using GitHub pages, deployed directly on the master branch.
-The link can be found [here](https://github.com/Aleksandre19/ucmp)
+The link can be found [here]( https://aleksandre19.github.io/cv-ucmp/)
 The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
 To run locally, you can clone this repository directly into the editor of your choice by pasting git clone (https://aleksandre19.github.io/ucmp/)
 into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
